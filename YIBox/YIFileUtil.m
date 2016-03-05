@@ -11,7 +11,6 @@
 @implementation YIFileUtil
 
 + (NSString *)appCachesDirectory {
-
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
     return paths[0];
 }

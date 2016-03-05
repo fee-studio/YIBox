@@ -202,7 +202,7 @@
 
 - (IBAction)saveImageBtnAction:(id)sender {
 	MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-	hud.color = kAppMainColor;
+	hud.color = kAppColorMain;
 	hud.mode = MBProgressHUDModeIndeterminate;
 	hud.labelText = [NSString stringWithFormat:@"保存到相册: %@", [YICommonUtil appName]];
 	

@@ -51,7 +51,7 @@
 - (void)loadWhyUseMeView {
 	UILabel *lbl = [[UILabel alloc] init];
 	lbl.numberOfLines = 0;
-	lbl.textColor = kAppTextMidColor;
+	lbl.textColor = kAppColorTextMid;
 	[self.view addSubview:lbl];
 	[lbl mas_makeConstraints:^(MASConstraintMaker *make) {
 		make.left.equalTo(lbl.superview).offset(10);
@@ -72,7 +72,7 @@
 		make.bottom.equalTo(switchBtn.superview).offset(-50);
 		make.centerX.equalTo(switchBtn.superview);
 
-		switchBtn.layer.borderColor = [kAppMainColor CGColor];
+		switchBtn.layer.borderColor = [kAppColorMain CGColor];
 		switchBtn.layer.borderWidth = 2.f;
 		switchBtn.layer.cornerRadius = mScreenWidth / 2.f / 2.f;
 		switchBtn.layer.masksToBounds = YES;
@@ -82,7 +82,7 @@
 	titleLbl.font = [UIFont systemFontOfSize:25];
 	titleLbl.numberOfLines = 0;
 	titleLbl.textAlignment = NSTextAlignmentCenter;
-	titleLbl.textColor = kAppMainColor;
+	titleLbl.textColor = kAppColorMain;
 	[switchBtn addSubview:titleLbl];
 	[titleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
 		make.edges.equalTo(titleLbl.superview);
@@ -97,8 +97,8 @@
 - (void)switchBtnAction:(UIButton *)btn {
 	btn.selected = !btn.selected;
 	
-	btn.backgroundColor = btn.selected ? kAppMainColor : [UIColor clearColor];
-	titleLbl.textColor = btn.selected ? [UIColor whiteColor] : kAppMainColor;
+	btn.backgroundColor = btn.selected ? kAppColorMain : [UIColor clearColor];
+	titleLbl.textColor = btn.selected ? [UIColor whiteColor] : kAppColorMain;
 	
 	if (btn.selected) {
 		NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:@"关闭\r手电筒"];
@@ -130,7 +130,7 @@
 
 - (void)loadFlashlightTypeView {
 	typeView = [[UIView alloc] init];
-	typeView.backgroundColor = kAppWhiteColor;
+	typeView.backgroundColor = kAppColorWhite;
 	[self.view addSubview:typeView];
 	[typeView mas_makeConstraints:^(MASConstraintMaker *make) {
 		make.top.equalTo(typeView.superview).offset(64+20);
@@ -141,7 +141,7 @@
 
 	UILabel *label = [[UILabel alloc] init];
 	label.text = @"手电筒类型";
-	label.textColor = kAppTextDeepColor;
+	label.textColor = kAppColorTextDeep;
 	[typeView addSubview:label];
 	[label mas_makeConstraints:^(MASConstraintMaker *make) {
 		make.left.equalTo(label.superview).offset(10);
@@ -159,14 +159,14 @@
 		make.height.equalTo(@34);
 	}];
 
-	mySwitch3.thumbTintColor = kAppWhiteColor;
-	mySwitch3.borderColor = mySwitch3.onTintColor = mySwitch3.activeColor = mySwitch3.inactiveColor = kAppMainColor;
+	mySwitch3.thumbTintColor = kAppColorWhite;
+	mySwitch3.borderColor = mySwitch3.onTintColor = mySwitch3.activeColor = mySwitch3.inactiveColor = kAppColorMain;
 	mySwitch3.shadowColor = [UIColor clearColor];
 
 	mySwitch3.onLabel.text = @"屏幕光";
-	mySwitch3.onLabel.textColor = kAppWhiteColor;
+	mySwitch3.onLabel.textColor = kAppColorWhite;
 	mySwitch3.offLabel.text = @"闪光灯";
-	mySwitch3.offLabel.textColor = kAppWhiteColor;
+	mySwitch3.offLabel.textColor = kAppColorWhite;
 
 	if (mGlobalData.flashlight.type == FlashlightTypeFlash) {
 		[mySwitch3 setOn:NO];

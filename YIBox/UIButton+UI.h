@@ -12,5 +12,6 @@
 
 - (void)orangeStyle;
 - (void)greenStyle;
+- (void)mainColorStyle;
 
 @end

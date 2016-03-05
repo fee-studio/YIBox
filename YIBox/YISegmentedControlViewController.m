@@ -31,7 +31,7 @@
     
     if (!_segmentedControl) {
         _segmentedControl = [[UISegmentedControl alloc] init];
-        _segmentedControl.tintColor = kAppMainColor;
+        _segmentedControl.tintColor = kAppColorMain;
     } else {
         [_segmentedControl removeAllSegments];
     }

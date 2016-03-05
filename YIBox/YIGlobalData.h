@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "YIConfigUtil.h"
 #import "YIFlashlight.h"
+#import "YIPrivateSetting.h"
 
 
 #define mGlobalData [YIGlobalData sharedInstance]
@@ -54,6 +55,8 @@ static NSString *const RELOAD_USER_DATA_NOTIFICATION = @"reload_user_data_notifi
 //@property(nonatomic, strong) NSString *flight;
 
 @property(nonatomic, strong) YIFlashlight *flashlight;
+
+@property(nonatomic, strong) YIPrivateSetting *privateSetting;
 
 + (YIGlobalData *)sharedInstance;
 

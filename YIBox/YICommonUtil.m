@@ -58,21 +58,9 @@
     return [NSString stringWithFormat:@"%li",(long)timestamp];
 }
 
-+ (void)toScorePageOfAppStore {
-    
-    //    NSString *str = [NSString stringWithFormat: @"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=%@",kAppId];
-    
-    NSString *str = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/app/id%@",@"app id"];
-    
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
-}
-
-+ (void)toHomePageOfAppStore {
-    
-    //    NSString *str2 = [NSString stringWithFormat: @"itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=%@", @"911260002"];
-    
-    NSString *str = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/app/id%@",@"kAppId"];
-    
++ (void)toAppPageOfAppStore {
+	NSString *appId = @"1083816988";
+    NSString *str = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/app/id%@", appId];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
 }
 
@@ -93,4 +81,7 @@
 	
 	return [difference day];
 }
+
+
+
 @end

@@ -11,4 +11,7 @@
 #import "YIConfigUtil.h"
 
 @interface YIConfigUtil (Business)
+
++ (void)toOpenWxScan;
++ (void)toOpenUrl:(NSString *)url;
 @end

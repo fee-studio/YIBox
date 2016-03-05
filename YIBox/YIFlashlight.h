@@ -15,16 +15,11 @@ typedef NS_ENUM(NSUInteger, FlashlightType) {
 };
 
 
-
-
-
-
-
 @interface YIFlashlight : NSObject
 
 @property (nonatomic) FlashlightType type; // 手电筒的类型
 @property (nonatomic) CGFloat brightness; // 当前的屏幕亮度
 
-
 + (instancetype)sharedInstance;
+
 @end

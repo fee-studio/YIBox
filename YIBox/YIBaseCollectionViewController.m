@@ -12,18 +12,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	
-//	self.edgesForExtendedLayout = UIRectEdgeAll;
+
+	if (_layout == nil) {
+		UICollectionViewFlowLayout *flowLayout=[[UICollectionViewFlowLayout alloc] init];
+		[flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
+		flowLayout.minimumLineSpacing = 1.f;
+		
+		_layout = flowLayout;
+	}
 	
     // 初始化
-    self.flowLayout=[[UICollectionViewFlowLayout alloc] init];
-    [_flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
-//	flowLayout.minimumLineSpacing = 1.f;
-	
-    self.baseCollectionView = [[UICollectionView alloc] initWithFrame:mScreenBounds collectionViewLayout:_flowLayout];
+	self.baseCollectionView = [[UICollectionView alloc] initWithFrame:mScreenBounds collectionViewLayout:_layout];
     _baseCollectionView.delegate = self;
     _baseCollectionView.dataSource = self;
-	_baseCollectionView.alwaysBounceVertical = YES;
     _baseCollectionView.backgroundColor = [UIColor groupTableViewBackgroundColor];
     [self.view addSubview:_baseCollectionView];
     [_baseCollectionView mas_makeConstraints:^(MASConstraintMaker *make) {

@@ -69,7 +69,6 @@ static CGFloat (^RAD)(CGFloat) = ^CGFloat (CGFloat degree){
     return [NSString stringWithFormat:@"#%@%@%@", red, green, blue];
 }
 
-
 #pragma mark - Color from RGBA
 + (instancetype)colorFromRGBAArray:(NSArray *)rgbaArray
 {

@@ -45,7 +45,7 @@
                                                               action:@selector(qaAction)];
     NSDictionary *titleAttributes = @{
             NSFontAttributeName : [UIFont fontWithName:@"Helvetica-Bold" size:15.0],
-            NSForegroundColorAttributeName : kAppMainColor
+            NSForegroundColorAttributeName : kAppColorMain
     };
     [qaItem setTitleTextAttributes:titleAttributes forState:UIControlStateNormal];
     self.navigationItem.rightBarButtonItem = qaItem;
@@ -122,7 +122,7 @@
      *
      *  self.inputToolbar.maximumHeight = 150;
      */
-	NSString *msg = [NSString stringWithFormat:@"[%@]将是您最好的万能手机工具箱, 如果您希望有其他的小工具出现在下一个版本中, 可以尽情地反馈给我们哦. 我们会尽最大的努力为您实现.", [YICommonUtil appName]];
+	NSString *msg = [NSString stringWithFormat:@"⎡%@⎦可能是您最好的万能手机工具箱, 如果您希望有其他的小工具出现在下一个版本中, 可以尽情地反馈给我们哦. 我们会尽最大的努力为您实现.", [YICommonUtil appName]];
     [self receiveMessagePressed:msg delayTime:1.0f];
 }
 

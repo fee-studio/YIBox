@@ -103,6 +103,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "UMengFeedback/UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_play_default@2x.png"
   install_resource "${BUILT_PRODUCTS_DIR}/CTAssetsPickerController.bundle"
   install_resource "${BUILT_PRODUCTS_DIR}/QBImagePicker.bundle"
+  install_resource "${BUILT_PRODUCTS_DIR}/TOWebViewControllerLocalizable.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "IDMPhotoBrowser/Classes/IDMPhotoBrowser.bundle"
@@ -150,6 +151,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "UMengFeedback/UMFeedback_iOS_2.3.4/UMengFeedback_SDK/Resources/umeng_fb_audio_play_default@2x.png"
   install_resource "${BUILT_PRODUCTS_DIR}/CTAssetsPickerController.bundle"
   install_resource "${BUILT_PRODUCTS_DIR}/QBImagePicker.bundle"
+  install_resource "${BUILT_PRODUCTS_DIR}/TOWebViewControllerLocalizable.bundle"
 fi
 
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

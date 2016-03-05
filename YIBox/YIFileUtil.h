@@ -17,4 +17,5 @@
 + (long long) fileSizeAtPath:(NSString*) filePath;
 //遍历文件夹获得文件夹大小，返回多少M
 + (float ) folderSizeAtPath:(NSString*) folderPath;
+
 @end

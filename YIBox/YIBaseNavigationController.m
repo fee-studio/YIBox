@@ -35,12 +35,12 @@
     [super viewDidLoad];
 
 	self.navigationBar.barStyle = UIBarStyleDefault;
-	self.navigationBar.tintColor = kAppWhiteColor;
-	self.navigationBar.barTintColor = kAppMainColor;
+	self.navigationBar.tintColor = kAppColorWhite;
+	self.navigationBar.barTintColor = kAppColorMain;
 
     NSDictionary *titleAttributes = @{
             NSFontAttributeName : kAppBigFont,
-            NSForegroundColorAttributeName : kAppWhiteColor
+            NSForegroundColorAttributeName : kAppColorWhite
     };
     self.navigationBar.titleTextAttributes = titleAttributes;
 	self.navigationBar.translucent = YES;

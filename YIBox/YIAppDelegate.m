@@ -13,6 +13,8 @@
 #import "YIIndexVc.h"
 #import "TorchObject.h"
 #import "YIFlashlight.h"
+#import "iVersion.h"
+
 
 @interface YIAppDelegate () <CLLocationManagerDelegate, UIViewControllerTransitioningDelegate>
 {
@@ -30,6 +32,10 @@
 #ifdef DEBUG
 //    [[AFNetworkActivityLogger sharedLogger] startLogging];
 #endif
+
+	[iVersion sharedInstance].appStoreID = 1083816988;
+	
+	
 }
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -68,8 +74,7 @@
 //    [self startHeartBeat];
 	
 	[self loadShortcutItems];
-	
-	
+
     return YES;
 }
 
@@ -436,7 +441,7 @@
                                                         [tabBarItemImages objectAtIndex:index]]];
         [item setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:unselectedImage];
         NSDictionary *textAttributes = nil;
-        textAttributes = @{NSForegroundColorAttributeName : kAppMainColor};
+        textAttributes = @{NSForegroundColorAttributeName : kAppColorMain};
         [item setSelectedTitleAttributes:textAttributes];
         [item setTitle:[tabBarItemTitles objectAtIndex:index]];
         index++;

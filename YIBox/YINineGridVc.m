@@ -11,6 +11,8 @@
 #import "UIImage+PECrop.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "ALAssetsLibrary+CustomPhotoAlbum.h"
+#import "YIShareUtil.h"
+
 
 @interface YINineGridVc () <UIImagePickerControllerDelegate, UINavigationControllerDelegate, PECropViewControllerDelegate>
 {
@@ -42,6 +44,7 @@
 	[super viewWillAppear:animated];
 	[MobClick beginLogPageView:NSStringFromClass(self.class)];
 }
+
 - (void)viewWillDisappear:(BOOL)animated
 {
 	[super viewWillDisappear:animated];
@@ -73,7 +76,7 @@
 		make.left.equalTo(pickerBtn.superview).offset(10);
 		make.centerY.equalTo(pickerBtn.superview);
 		make.width.equalTo(@70);
-		make.height.equalTo(@30);
+		make.height.equalTo(@34);
 	}];
 	
 	UIButton *saveBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -86,8 +89,22 @@
 		make.right.equalTo(saveBtn.superview).offset(-10);
 		make.centerY.equalTo(saveBtn.superview);
 		make.width.equalTo(@70);
-		make.height.equalTo(@30);
+		make.height.equalTo(@34);
 	}];
+	
+//	UIButton * shareBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//	[shareBtn mainColorStyle];
+//	shareBtn.titleLabel.font = kAppSmlFont;
+//	[shareBtn setTitle:@"分享到朋友圈" forState:UIControlStateNormal];
+//	[shareBtn addTarget:self action:@selector(shareCroppedPicAction:) forControlEvents:UIControlEventTouchUpInside];
+//	[toolView addSubview:shareBtn];
+//	[shareBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+//		make.left.equalTo(saveBtn.mas_right).offset(10);
+//		make.right.equalTo(shareBtn.superview).offset(-10);
+//		make.centerY.equalTo(shareBtn.superview);
+//		make.width.equalTo(@70);
+//		make.height.equalTo(@34);
+//	}];
 }
 
 - (void)loadPyqSampleView {
@@ -96,7 +113,7 @@
 	}
 	
 	sampleView = [[UIView alloc] init];
-	sampleView.backgroundColor = kAppWhiteColor;
+	sampleView.backgroundColor = kAppColorWhite;
 	[self.view addSubview:sampleView];
 	[sampleView mas_makeConstraints:^(MASConstraintMaker *make) {
 		make.top.equalTo(sampleView.superview).offset(20+44+20);
@@ -247,13 +264,18 @@
 - (IBAction)saveCroppedPicAction:(id)sender {
 	if (_croppedImageMa.count) {
 		hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-		hud.color = kAppMainColor;
+		hud.color = kAppColorMain;
 		hud.mode = MBProgressHUDModeIndeterminate;
 		hud.labelText = [NSString stringWithFormat:@"保存到相册: %@", [YICommonUtil appName]];
 		
 		UIImage *image = _croppedImageMa[0];
 		[self saveImageToAlbum:image index:0];
 	}
+}
+
+- (void)shareCroppedPicAction:(id)action  {
+//	[YIShareUtil toWxShare:WXSceneTimeline images:nil];
+	[YIShareUtil toWxShare:WXSceneTimeline text:nil];
 }
 
 #pragma mark - UIImagePickerControllerDelegate methods

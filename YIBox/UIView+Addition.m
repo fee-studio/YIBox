@@ -65,7 +65,7 @@
 }
 
 - (void)cornerStyle {
-    self.layer.cornerRadius = 5.f;
+    self.layer.cornerRadius = 4.f;
     self.layer.masksToBounds = YES;
 }
 

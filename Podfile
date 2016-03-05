@@ -90,12 +90,13 @@ pod 'TSMessages'
 
 #pod 'CTAssetsPickerController', '~> 2.9.5'
 pod 'CTAssetsPickerController',  '~> 3.2.0' # ios8
+
 ##################################################
 
 # 轻量级 浏览器
 # 地址: https://github.com/TimOliver/TOWebViewController
 
-# pod 'TOWebViewController'
+pod 'TOWebViewController'
 
 ##################################################
 
@@ -161,12 +162,12 @@ pod 'pop', '~> 1.0'
 # Model framework for Cocoa and Cocoa Touch
 # https://github.com/Mantle/Mantle
 
-# pod 'Mantle'
-# pod 'MTLManagedObjectAdapter'
+pod 'Mantle'
+pod 'MTLManagedObjectAdapter'
 
 ##################################################
 
-# 版本更新控制 自动更新的第三方库
+# 版本更新控制 自动更新的第三方库[已经放项目中了，不用pod管理了]
 # 地址: https://github.com/nicklockwood/iVersion
 
 #pod 'iVersion' # ios8
@@ -237,7 +238,7 @@ pod 'JSQMessagesViewController'
 
 # https://github.com/dzenbot/DZNEmptyDataSet
 
-# pod 'DZNEmptyDataSet'
+pod 'DZNEmptyDataSet'
 
 ##################################################
 
@@ -354,4 +355,8 @@ pod 'SevenSwitch', '~> 1.4'
 
 ##################################################
 
+# 二维码
+# https://github.com/MxABC/LBXScan
+
+pod 'LBXScan'
 

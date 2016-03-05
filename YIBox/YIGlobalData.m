@@ -45,6 +45,8 @@ static YIGlobalData *sharedGlobalData = nil;
     _isShowFeature = [mUserDefaults boolForKey:kShowFeature];
 	
 	_flashlight = [YIFlashlight sharedInstance];
+	
+	_privateSetting = [YIPrivateSetting fetchData];
 
 //    _deviceToken = [mUserDefaults stringForKey:kDeviceToken];
 //    _savedVersionCode = [mUserDefaults stringForKey:kSavedVersionCode];
@@ -88,6 +90,12 @@ static YIGlobalData *sharedGlobalData = nil;
     _isShowFeature = isShowFeature;
     [mUserDefaults setBool:_isShowFeature forKey:kShowFeature];
     [mUserDefaults synchronize];
+}
+
+
+
+- (void)setPrivateSetting:(YIPrivateSetting *)privateSetting {
+	
 }
 
 @end

@@ -18,6 +18,10 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = [YICommonUtil appName];
+		
+//		UIImageView *titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_100"]];
+//		[titleView setFrame:CGRectMake(0, 0, 40, 40)];
+//		self.navigationItem.titleView = titleView;
     }
     return self;
 }
@@ -49,10 +53,17 @@
  */
 	
 	UIBarButtonItem *flexItem = [[UIBarButtonItem alloc] initWithTitle:@"FLEX" style:UIBarButtonItemStylePlain target:self action:@selector(flexButtonTapped:)];
-	UIBarButtonItem *feedbackItem = [[UIBarButtonItem alloc] initWithTitle:@"反馈" style:UIBarButtonItemStylePlain target:self action:@selector(feedbackAction:)];
+//	UIBarButtonItem *feedbackItem = [[UIBarButtonItem alloc] initWithTitle:@"反馈" style:UIBarButtonItemStylePlain target:self action:@selector(feedbackAction:)];
+//	UIBarButtonItem *feedbackItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"my_feedback"] style:UIBarButtonItemStylePlain target:self action:@selector(feedbackAction:)];
+
+	UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+	[button setBackgroundImage:[UIImage imageNamed:@"feedback"] forState:UIControlStateNormal];
+	[button setFrame:CGRectMake(0, 0, 30, 30)];
+	[button addTarget:self action:@selector(feedbackAction:) forControlEvents:UIControlEventTouchUpInside];
+	UIBarButtonItem *feedbackItem = [[UIBarButtonItem alloc] initWithCustomView:button];
 	
 #if DEBUG
-	self.navigationItem.rightBarButtonItems = @[flexItem, feedbackItem];
+	self.navigationItem.rightBarButtonItems = @[feedbackItem,flexItem];
 #else
 	self.navigationItem.rightBarButtonItems = @[feedbackItem];
 #endif
@@ -73,7 +84,6 @@
     [super viewWillDisappear:animated];
     [MobClick endLogPageView:NSStringFromClass(self.class)];
 }
-
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
