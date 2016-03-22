@@ -23,5 +23,6 @@
 - (void)cornerStyle;
 - (void)borderStyle;
 - (void)flashlightSwitchStyle;
+- (void)circleStyle;
 
 @end

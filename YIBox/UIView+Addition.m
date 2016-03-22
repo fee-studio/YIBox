@@ -75,6 +75,11 @@
 	self.layer.masksToBounds = YES;
 }
 
+- (void)circleStyle {
+	self.layer.cornerRadius = self.width / 2.f;
+	self.layer.masksToBounds = YES;
+}
+
 - (void)flashlightSwitchStyle {
     self.layer.borderColor = [[UIColor lightGrayColor] CGColor];
     self.layer.borderWidth = 5.f;

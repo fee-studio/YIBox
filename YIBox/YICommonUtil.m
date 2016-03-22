@@ -82,6 +82,14 @@
 	return [difference day];
 }
 
++ (NSString *)channelName {
+    NSString *chName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"Channel"];
+    if (chName.isOK) {
+        return chName;
+    } else {
+        return APP_CHANNEL_DEFAULT;
+    }
+}
 
 
 @end

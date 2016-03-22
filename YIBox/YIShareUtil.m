@@ -8,6 +8,8 @@
 
 #import "YIShareUtil.h"
 
+static NSString *const WEIXIN_APPID = @"wx476f226515637245";
+
 
 @implementation YIShareUtil
 
@@ -24,7 +26,7 @@
 	WXWebpageObject *ext = [WXWebpageObject object];
 	ext.webpageUrl = webpageUrl;
 	message.mediaObject = ext;
-	// message.mediaTagName = @"WECHAT_TAG_JUMP_SHOWRANK";
+	message.mediaTagName = @"XIAOJIA_WEBPAGE";
 	
 	SendMessageToWXReq *req = [[SendMessageToWXReq alloc] init];
 	req.bText = NO;
@@ -34,7 +36,7 @@
 }
 
 + (void)toWxShareAppPromotionPage {
-	[WXApi registerApp:@"wx476f226515637245"]; // todo 要换成小加 还有info.plist里面
+	[WXApi registerApp:WEIXIN_APPID];
 	[self toWxShare:WXSceneTimeline
 			  title:@"小加, 一个小而美的手机助手!"
 		description:@""
@@ -44,7 +46,7 @@
 
 + (BOOL)toWxShare:(enum WXScene)scene
 			 text:(NSString *)text {
-	[WXApi registerApp:@"wx476f226515637245"];
+	[WXApi registerApp:WEIXIN_APPID];
 	
 	SendMessageToWXReq *req = [[SendMessageToWXReq alloc] init];
 	req.bText = YES;
@@ -55,7 +57,7 @@
 
 + (BOOL)toWxShare:(enum WXScene)scene
 		   images:(NSArray *)images {
-	[WXApi registerApp:@"wx476f226515637245"];
+	[WXApi registerApp:WEIXIN_APPID];
 	
 	WXMediaMessage *message = [WXMediaMessage message];
 	[message setThumbImage:[UIImage imageNamed:@"placeholder"]];

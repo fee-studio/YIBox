@@ -13,15 +13,6 @@
 
 @implementation YIConfigUtil
 
-+ (NSString *)channelName {
-    NSString *chName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"Channel"];
-    if (chName.isOK) {
-        return chName;
-    } else {
-        return APP_CHANNEL_DEFAULT;
-    }
-}
-
 + (NSString *)userInfoSavedPath {
     NSString *path = [[YIFileUtil appDocumentDirectory] stringByAppendingPathComponent:@"9527.plist"];
     return path;

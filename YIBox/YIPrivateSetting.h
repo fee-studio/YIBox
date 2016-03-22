@@ -37,4 +37,6 @@ typedef enum : NSUInteger {
 
 @property (nonatomic, copy) NSString *simplePassword;
 
+@property (nonatomic, assign) int promptOnVersion; // 1, 点我三次 2, 再点我三次 3, 版本：xxx
+
 @end

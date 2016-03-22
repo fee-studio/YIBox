@@ -62,7 +62,7 @@
 	{
 		self.topTitle = [[UILabel alloc]init];
 		_topTitle.bounds = CGRectMake(0, 0, self.view.bounds.size.width, 60);
-		_topTitle.center = CGPointMake(CGRectGetWidth(self.view.frame)/2, CGRectGetHeight(self.view.frame)/2+110);
+		_topTitle.center = CGPointMake(CGRectGetWidth(self.view.frame)/2, CGRectGetHeight(self.view.frame)/2+120);
 		
 		//3.5inch iphone
 		if ([UIScreen mainScreen].bounds.size.height <= 568)
@@ -81,8 +81,7 @@
 
 - (void)drawBottomItems
 {
-	if (_bottomItemsView) {
-		
+	if (_bottomItemsView) {		
 		return;
 	}
 	

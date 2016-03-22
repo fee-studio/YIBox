@@ -37,6 +37,7 @@
 // 两个日期之间的天数
 + (NSInteger)daysBetweenDate:(NSDate*)fromDateTime andDate:(NSDate*)toDateTime;
 
-
+// 渠道名字
++ (NSString *)channelName;
 
 @end

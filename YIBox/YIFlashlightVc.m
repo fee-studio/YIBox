@@ -15,6 +15,8 @@
 {
 	UIView *typeView;
 	UILabel *titleLbl;
+	
+	UIButton *switchBtn;
 }
 @end
 
@@ -48,6 +50,20 @@
 	[self loadWhyUseMeView];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+	if (switchBtn && ![[TorchObject sharedInstance] isTorchOn]) {
+		[self switchBtnAction:switchBtn];
+	}
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+	[super viewWillDisappear:animated];
+	if (switchBtn && [[TorchObject sharedInstance] isTorchOn]) {
+		[self switchBtnAction:switchBtn];
+	}
+}
+
 - (void)loadWhyUseMeView {
 	UILabel *lbl = [[UILabel alloc] init];
 	lbl.numberOfLines = 0;
@@ -63,7 +79,7 @@
 }
 
 - (void)loadOnOffView {
-	UIButton *switchBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+	switchBtn = [UIButton buttonWithType:UIButtonTypeCustom];
 	[switchBtn addTarget:self action:@selector(switchBtnAction:) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:switchBtn];
 	[switchBtn mas_makeConstraints:^(MASConstraintMaker *make) {

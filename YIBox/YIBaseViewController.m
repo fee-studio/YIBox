@@ -30,6 +30,13 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
 	
+//	UIImageView *bgIv = [UIImageView new];
+//	bgIv.image = [UIImage imageNamed:@"launch_bg2"];
+//	[self.view insertSubview:bgIv atIndex:0];
+//	[bgIv mas_makeConstraints:^(MASConstraintMaker *make) {
+//		make.edges.equalTo(bgIv.superview);
+//	}];
+	
 //	self.edgesForExtendedLayout = UIRectEdgeNone; // 对navigation进行任何风格的设置都不会再生效, 怪怪..
 	
     // register for keyboard notifications

@@ -17,6 +17,7 @@
 
 #define kAppColorWhite		([UIColor colorWithHexString:@"ffffff"])
 #define kAppColorGray		([UIColor colorWithHexString:@"999999"])
+#define kAppColorLightGray	([UIColor colorWithHexString:@"eeeeee"])
 #define kAppColorBlack		([UIColor darkGrayColor])
 
 #define kAppColorRed		([UIColor watermelonColor])

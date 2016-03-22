@@ -18,6 +18,9 @@
 #import "iVersion.h"
 #import "YIPrivatePhotoVc.h"
 #import "YIPasswordManager.h"
+#import "YIInitUtil.h"
+#import "YICalculatorVc.h"
+
 
 @interface YIIndexVc ()
 {
@@ -41,8 +44,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-
+	
+//	UIImageView *bgIv = [UIImageView new];
+//	bgIv.image = [UIImage imageNamed:@"launch_bg2"];
+//	[self.view insertSubview:bgIv atIndex:0];
+//	[bgIv mas_makeConstraints:^(MASConstraintMaker *make) {
+//		make.edges.equalTo(bgIv.superview);
+//	}];
+	
+//	self.baseTableView.backgroundColor = [UIColor clearColor];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -61,7 +71,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-
+	
 }
 
 - (void)loadData {
@@ -102,6 +112,13 @@
                                     @"name" : @"二维码",
                                     @"detail" : @"",
                                     @"target" : [NSNull null]
+                            },
+                            @{
+                                    @"id" : @(1005),
+                                    @"image" : @"calculator_icon",
+                                    @"name" : @"竖式计算器",
+                                    @"detail" : @"",
+                                    @"target" : NSStringFromClass(YICalculatorVc.class)
                             },
                     ],
                     @[
@@ -189,7 +206,7 @@
         } else if (itemIdCode == 2002) {
             [YIShareUtil toWxShareAppPromotionPage];
         } else {
-
+			
         }
     } else {
 		if (itemIdCode == 1004) {
@@ -267,12 +284,18 @@
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
     if (section == _tools.count - 1) {
         UILabel *footerLbl = [[UILabel alloc] init];
-        footerLbl.text = [NSString stringWithFormat:@"版本 %@", [YICommonUtil appVersion]];
+		if (mGlobalData.privateSetting.promptOnVersion == 1) {
+			footerLbl.text = @"点我三下";
+		} else if (mGlobalData.privateSetting.promptOnVersion == 2) {
+			footerLbl.text = @"再点我三下哈";
+		} else {
+			footerLbl.text = [NSString stringWithFormat:@"版本 %@", [YICommonUtil appVersion]];
+		}
         footerLbl.textAlignment = NSTextAlignmentCenter;
         footerLbl.textColor = kAppColorTextLight;
         footerLbl.font = kAppSmlFont;
 		footerLbl.userInteractionEnabled = YES;
-		UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(togglePrivatePhoto)];
+		UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(togglePrivatePhoto:)];
 		tap.numberOfTapsRequired = 3;
 		[footerLbl addGestureRecognizer:tap];
         return footerLbl;
@@ -280,8 +303,15 @@
     return nil;
 }
 
-- (void)togglePrivatePhoto {
-	curPrivatePhotoEnterState = !curPrivatePhotoEnterState;
+- (void)togglePrivatePhoto:(UITapGestureRecognizer *)tap {
+	curPrivatePhotoEnterState = !curPrivatePhotoEnterState;	
+	
+	if (mGlobalData.privateSetting.promptOnVersion == 1) {
+		mGlobalData.privateSetting.promptOnVersion = 2;
+	} else if (mGlobalData.privateSetting.promptOnVersion == 2) {
+		mGlobalData.privateSetting.promptOnVersion = 3;
+	}
+	[mGlobalData.privateSetting saveData];
 	
 	[self loadData];
 }

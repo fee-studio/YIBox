@@ -23,6 +23,7 @@
 #define kDebugOn                @"debug_on"
 #define kShowFeature            @"show_app_new_featrue"
 #define kSavedVersionCode       @"saved_version_code"
+#define kNotShowSplashScreen	@"not_show_splash_screen"
 
 static NSString *const RELOAD_USER_DATA_NOTIFICATION = @"reload_user_data_notification";
 
@@ -57,6 +58,9 @@ static NSString *const RELOAD_USER_DATA_NOTIFICATION = @"reload_user_data_notifi
 @property(nonatomic, strong) YIFlashlight *flashlight;
 
 @property(nonatomic, strong) YIPrivateSetting *privateSetting;
+
+@property(nonatomic, assign) BOOL notShowSplashScreen;
+
 
 + (YIGlobalData *)sharedInstance;
 

@@ -5,6 +5,7 @@
 //  Created by efeng on 15/9/5.
 //  Copyright (c) 2015年 buerguo. All rights reserved.
 //
+// 解决启动是黑屏的问题
 
 #import "YIAppDelegate.h"
 #import <CoreTelephony/CTCarrier.h>
@@ -14,6 +15,9 @@
 #import "TorchObject.h"
 #import "YIFlashlight.h"
 #import "iVersion.h"
+#import "YISplashScreen.h"
+#import "YIInitUtil.h"
+#import "YICalculatorVc.h"
 
 
 @interface YIAppDelegate () <CLLocationManagerDelegate, UIViewControllerTransitioningDelegate>
@@ -34,27 +38,24 @@
 #endif
 
 	[iVersion sharedInstance].appStoreID = 1083816988;
-	
-	
 }
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	
+    // 初始化基本要用到东西.
+    [YIInitUtil loadBaseInit];
+
 //    // 初始化网络配置
 //    [self initNetConfig];
 //    
 //    // 初始化图片缓存
 //    [self initImageConfig];
 	
-    // 初始化友盟统计插件
-    [self initUMeng:launchOptions];
+//    // 初始化友盟统计插件
+//    [self initUMeng:launchOptions];
     
-    // 初始化全局数据
-    [self initGlobalData];
-    
-    // 注册APNS
-    [self registerAPNS];
-    
+//    // 初始化全局数据
+//    [self initGlobalData];
+        
     // 注册错误处理通知
     [self registerErrorHandleNotification];
     
@@ -62,7 +63,7 @@
     [self loadOtherTasks:launchOptions];
     
     // 启动定位
-    [self startLocation];
+//    [self startLocation];
     
     // 获取运营商的信息
     [self carrierOperator];
@@ -74,9 +75,34 @@
 //    [self startHeartBeat];
 	
 	[self loadShortcutItems];
+	
 
     return YES;
 }
+
+#pragma mark -
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+	// todo ...
+	//	return [self loadTempViewController];
+	
+	[self checkShortcutItem:launchOptions];
+	
+	// 加载应用
+	[self loadMainViewController];
+	
+//	[[YISplashScreen new] loadSplashScreen2];
+	
+	// 动态闪屏图
+	if (!mGlobalData.notShowSplashScreen) {
+		if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
+			[[YISplashScreen new] loadSplashScreen];
+		}
+	}
+	
+	return YES;
+}
+
 
 #pragma mark - 初始化工作开始
 
@@ -264,13 +290,16 @@
 #pragma mark init UMeng
 
 - (void)initUMeng:(NSDictionary *)launchOptions {
-    [MobClick startWithAppkey:UMENG_APP_KEY reportPolicy:SEND_INTERVAL channelId:[YIConfigUtil channelName]];
+    [MobClick startWithAppkey:UMENG_APP_KEY reportPolicy:SEND_INTERVAL channelId:[YICommonUtil channelName]];
     NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     [MobClick setAppVersion:version];
+	
     // 友盟反馈
     [UMFeedback setAppkey:UMENG_APP_KEY];
-    
-    
+	
+	/*
+	 友盟通知 暂不用
+	 
     if (IOS_8_OR_LATER) {
         //register remoteNotification types
         UIMutableUserNotificationAction *action1 = [[UIMutableUserNotificationAction alloc] init];
@@ -296,6 +325,9 @@
     } else {
         [UMessage registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert];
     }
+	 */
+	
+	/*
     [UMessage setLogEnabled:YES];
     
     // 关闭状态时点击反馈消息进入反馈页
@@ -304,29 +336,7 @@
     [[UMFeedback sharedInstance] setFeedbackViewController:nil shouldPush:YES];
     
     [self.window.rootViewController presentViewController:[UMFeedback feedbackViewController] animated:YES completion:NULL];
-}
-
-#pragma mark init APNS
-// http://www.jianshu.com/p/803bfaae989e
-- (void)registerAPNS {
-    if ([[UIApplication sharedApplication] respondsToSelector:@selector(registerUserNotificationSettings:)]) {
-        if ([YIConfigUtil onRemoteNotificationFor8]) {
-            UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert
-                                                    | UIUserNotificationTypeBadge
-                                                    | UIUserNotificationTypeSound
-                                                                                     categories:nil];
-            [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
-            [[UIApplication sharedApplication] registerForRemoteNotifications];
-        } else {
-            [[UIApplication sharedApplication] registerForRemoteNotifications];
-            UIUserNotificationSettings *uns = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound) categories:nil];
-            [[UIApplication sharedApplication] registerUserNotificationSettings:uns];
-        }
-    } else {
-        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound];
-    }
-    
-//    [AVPush setProductionMode:NO]; // 测试环境
+	 */
 }
 
 #pragma mark 注册错误处理通知
@@ -388,20 +398,6 @@
     mGlobalData.isLaunched = YES;
 }
 
-#pragma mark -
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	// todo ...
-	//	return [self loadTempViewController];
-	
-	[self checkShortcutItem:launchOptions];
-	
-    // 加载应用
-    [self loadMainViewController];
-	
-    return YES;
-}
-
 - (void)checkShortcutItem:(NSDictionary *)launchOptions {
 	if ([UIApplicationShortcutItem class]) {
 		// 3D touch 检测
@@ -418,7 +414,8 @@
 }
 
 - (void)loadMainViewController {
-	YIIndexVc *vc = [[YIIndexVc alloc] init];
+	YIIndexVc *vc = [[YIIndexVc alloc] init]; // todo ...
+//	YICalculatorVc *vc = [[YICalculatorVc alloc] init];
 	YIBaseNavigationController *mainNc = [[YIBaseNavigationController alloc] initWithRootViewController:vc];
 	self.window = [[UIWindow alloc] initWithFrame:mScreenBounds];
 	[self.window setRootViewController:mainNc];
@@ -465,9 +462,9 @@
 #pragma mark - APNS Notification
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    NSLog(@"推送注册成功: Device Token is %@", mGlobalData.deviceToken);
-
     mGlobalData.deviceToken = [deviceToken hexadecimalString];
+	
+	NSLog(@"推送注册成功: Device Token is %@", mGlobalData.deviceToken);
 	
     // 友盟
     [UMessage registerDeviceToken:deviceToken];
@@ -477,6 +474,7 @@
             NSLog(@"%@", responseObject);
         }
     }];
+	
     /*
     // AVOSCLOUD
     AVInstallation *currentInstallation = [AVInstallation currentInstallation];
@@ -492,10 +490,10 @@
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
     NSLog(@"=== 收到推送通知 ===");
     
-    int notificationType = [userInfo[@"t"] intValue];
-    NSDictionary *aps = userInfo[@"aps"];
-    id alert = aps[@"alert"];
-    NSString *message = nil;
+//    int notificationType = [userInfo[@"t"] intValue];
+//    NSDictionary *aps = userInfo[@"aps"];
+//    id alert = aps[@"alert"];
+//    NSString *message = nil;
 }
 
 #pragma mark - 3D touch 回调

@@ -21,11 +21,11 @@
 - (NSURL *)applicationDocumentsDirectory;
 
 
-- (void)loadLoginViewController;
+//- (void)loadLoginViewController;
 //- (void)loadMainViewController;
-- (void)loadAddBabyViewController;
+//- (void)loadAddBabyViewController;
 
-- (void)loadMainViewController2;
+//- (void)loadMainViewController2;
 
 // 加载3D Touch快捷方式
 - (void)loadShortcutItems;

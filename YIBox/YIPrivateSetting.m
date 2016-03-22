@@ -22,6 +22,7 @@
 		self.simplePasswordState = PPSSimplePasswordStateOpen;
 		self.fingerprintState = PPSFingerprintStateClosed;
 		self.simplePassword = @"";
+		self.promptOnVersion = 1;
 	}
 	return self;
 }

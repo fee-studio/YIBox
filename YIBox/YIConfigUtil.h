@@ -10,7 +10,6 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 
 
-#define APP_ID                          @"12"
 #define APP_ERROR_HANDLE_NOTIFICATION   @"app_error_handle_notification"
 #define SHARE_CALLBACK_NOTIFICATION     @"share_callback_notification"
 #define TOGGLE_LOGIN_STATUS_NOTIFICATION  @"toggle_login_status_notification"
@@ -20,12 +19,6 @@
 
 
 #define PARAMETERS_LOST @"参数缺失_本地"
-
-// #define APP_NAME @"小加"
-
-// 微播圈
-#define WX_APP_ID       @"wxe084609c9bf32638"
-#define WX_APP_SECRET   @"2225ac59cf89aeb3688775df2e9a6961"
 
 
 typedef NS_ENUM(NSUInteger, ServerType) {
@@ -58,9 +51,6 @@ static NSString *const APP_CHANNEL_FRIEND = @"app_hao_you_fen_xiang";
 
 
 @interface YIConfigUtil : NSObject
-
-// 渠道名称
-+ (NSString *)channelName;
 
 // 账户信息保存路径
 + (NSString *)userInfoSavedPath;

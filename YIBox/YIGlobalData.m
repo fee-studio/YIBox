@@ -43,9 +43,10 @@ static YIGlobalData *sharedGlobalData = nil;
     _isLaunched = [mUserDefaults boolForKey:kLaunched];
     _debugOn = [mUserDefaults boolForKey:kDebugOn];
     _isShowFeature = [mUserDefaults boolForKey:kShowFeature];
+	_notShowSplashScreen = [mUserDefaults boolForKey:kNotShowSplashScreen];
+	
 	
 	_flashlight = [YIFlashlight sharedInstance];
-	
 	_privateSetting = [YIPrivateSetting fetchData];
 
 //    _deviceToken = [mUserDefaults stringForKey:kDeviceToken];
@@ -92,6 +93,11 @@ static YIGlobalData *sharedGlobalData = nil;
     [mUserDefaults synchronize];
 }
 
+- (void)setNotShowSplashScreen:(BOOL)notShowSplashScreen {
+	_notShowSplashScreen = notShowSplashScreen;
+	[mUserDefaults setBool:_notShowSplashScreen forKey:kNotShowSplashScreen];
+	[mUserDefaults synchronize];
+}
 
 
 - (void)setPrivateSetting:(YIPrivateSetting *)privateSetting {
