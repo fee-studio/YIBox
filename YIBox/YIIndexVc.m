@@ -109,7 +109,7 @@
                             @{
                                     @"id" : @(1003),
                                     @"image" : @"qr_code_icon",
-                                    @"name" : @"二维码",
+                                    @"name" : @"扫一扫/二维码",
                                     @"detail" : @"",
                                     @"target" : [NSNull null]
                             },
@@ -284,15 +284,19 @@
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
     if (section == _tools.count - 1) {
         UILabel *footerLbl = [[UILabel alloc] init];
+		
 		if (mGlobalData.privateSetting.promptOnVersion == 1) {
 			footerLbl.text = @"点我三下";
+			footerLbl.textColor = kAppColorRed;
 		} else if (mGlobalData.privateSetting.promptOnVersion == 2) {
 			footerLbl.text = @"再点我三下哈";
+			footerLbl.textColor = kAppColorMain;
 		} else {
 			footerLbl.text = [NSString stringWithFormat:@"版本 %@", [YICommonUtil appVersion]];
+			footerLbl.textColor = kAppColorTextLight;
 		}
         footerLbl.textAlignment = NSTextAlignmentCenter;
-        footerLbl.textColor = kAppColorTextLight;
+		
         footerLbl.font = kAppSmlFont;
 		footerLbl.userInteractionEnabled = YES;
 		UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(togglePrivatePhoto:)];
