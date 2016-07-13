@@ -101,6 +101,8 @@
 		52DFD8701C897AFC002EB8E7 /* iconfont-unselect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52DFD86E1C897AFC002EB8E7 /* iconfont-unselect@2x.png */; };
 		52DFD8721C897C4D002EB8E7 /* iconfont-iconfontsuo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52DFD8711C897C4D002EB8E7 /* iconfont-iconfontsuo@2x.png */; };
 		52F6C7201C5F5EDB00C086FF /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F6C71F1C5F5EDB00C086FF /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
+		52FB2D721CA22E9300A6F1BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FB2D711CA22E9300A6F1BC /* Foundation.framework */; };
+		52FB2D741CA22ECF00A6F1BC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FB2D731CA22ECF00A6F1BC /* AVFoundation.framework */; };
 		5BF2C012BBB88D4B4835261F /* my_collection@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C3F5911874E42BF8EB7F /* my_collection@2x.png */; };
 		5BF2C018ACF573F628A42F88 /* image_default@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C1D0B362A35C1360F299 /* image_default@2x.jpg */; };
 		5BF2C1359D5C1BCD246C72BF /* YIFlashlightVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C2F33B72ADF8D3126863 /* YIFlashlightVc.xib */; };
@@ -355,6 +357,8 @@
 		52DFD8711C897C4D002EB8E7 /* iconfont-iconfontsuo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-iconfontsuo@2x.png"; sourceTree = "<group>"; };
 		52F6C71E1C5F5EDB00C086FF /* ALAssetsLibrary+CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+CustomPhotoAlbum.h"; sourceTree = "<group>"; };
 		52F6C71F1C5F5EDB00C086FF /* ALAssetsLibrary+CustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+CustomPhotoAlbum.m"; sourceTree = "<group>"; };
+		52FB2D711CA22E9300A6F1BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		52FB2D731CA22ECF00A6F1BC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		5BF2C002DD6085B87367AF23 /* YIBlurVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YIBlurVc.xib; sourceTree = "<group>"; };
 		5BF2C01B6A4F9127A4CE33E4 /* BKShiftingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKShiftingView.h; sourceTree = "<group>"; };
 		5BF2C05128C200B5C09B84CB /* CheckmarkUnselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CheckmarkUnselected@2x.png"; sourceTree = "<group>"; };
@@ -469,6 +473,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FB2D721CA22E9300A6F1BC /* Foundation.framework in Frameworks */,
+				52FB2D741CA22ECF00A6F1BC /* AVFoundation.framework in Frameworks */,
 				52B5BBE21C7C39BF0028049E /* libz.tbd in Frameworks */,
 				52B5BBE11C7C39420028049E /* libsqlite3.0.tbd in Frameworks */,
 				52B5BBDD1C7C38CC0028049E /* SystemConfiguration.framework in Frameworks */,
@@ -542,24 +548,24 @@
 		528620D31C5CF944002A5FEC /* YIBox */ = {
 			isa = PBXGroup;
 			children = (
-				528621071C5D0521002A5FEC /* lib */,
-				528621A21C5E0786002A5FEC /* BaseView */,
-				528621A11C5E072F002A5FEC /* Base */,
-				528621821C5E0706002A5FEC /* BaseViewController */,
-				528621441C5E06B2002A5FEC /* Category */,
-				528621181C5E04CD002A5FEC /* Util */,
 				528621101C5E0235002A5FEC /* YIAppDelegate.h */,
 				528621111C5E0235002A5FEC /* YIAppDelegate.m */,
 				528621151C5E0449002A5FEC /* YIGlobalData.h */,
 				528621161C5E0449002A5FEC /* YIGlobalData.m */,
 				522AD56C1C8C35DD00C851CD /* YISplashScreen.h */,
 				522AD56D1C8C35DD00C851CD /* YISplashScreen.m */,
-				528620E01C5CF944002A5FEC /* Assets.xcassets */,
-				522AD56F1C8C374800C851CD /* Launch.xib */,
-				528620E21C5CF944002A5FEC /* LaunchScreen.storyboard */,
+				528621071C5D0521002A5FEC /* Libs */,
+				528621A21C5E0786002A5FEC /* BaseView */,
+				528621A11C5E072F002A5FEC /* Base */,
+				528621821C5E0706002A5FEC /* BaseViewController */,
+				528621441C5E06B2002A5FEC /* Category */,
+				528621181C5E04CD002A5FEC /* Util */,
 				528620D41C5CF944002A5FEC /* Supporting Files */,
 				5BF2CFC14349B3878386B21C /* Images */,
 				5BF2C6DCDC1F83FB3590356C /* ViewController */,
+				528620E01C5CF944002A5FEC /* Assets.xcassets */,
+				522AD56F1C8C374800C851CD /* Launch.xib */,
+				528620E21C5CF944002A5FEC /* LaunchScreen.storyboard */,
 			);
 			path = YIBox;
 			sourceTree = "<group>";
@@ -593,7 +599,7 @@
 			path = YIBoxUITests;
 			sourceTree = "<group>";
 		};
-		528621071C5D0521002A5FEC /* lib */ = {
+		528621071C5D0521002A5FEC /* Libs */ = {
 			isa = PBXGroup;
 			children = (
 				52B5BBE31C7C3A4F0028049E /* SDKExport */,
@@ -602,7 +608,7 @@
 				528621081C5D053C002A5FEC /* UIImageView+LBBlurredImage.h */,
 				528621091C5D053C002A5FEC /* UIImageView+LBBlurredImage.m */,
 			);
-			name = lib;
+			name = Libs;
 			sourceTree = "<group>";
 		};
 		528621181C5E04CD002A5FEC /* Util */ = {
@@ -989,6 +995,8 @@
 		96A2415A5C98C1CFF9316332 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				52FB2D731CA22ECF00A6F1BC /* AVFoundation.framework */,
+				52FB2D711CA22E9300A6F1BC /* Foundation.framework */,
 				52B5BBE01C7C39420028049E /* libsqlite3.0.tbd */,
 				52B5BBDE1C7C39000028049E /* libz.tbd */,
 				52B5BBDC1C7C38CC0028049E /* SystemConfiguration.framework */,
@@ -1489,7 +1497,7 @@
 					"COCOAPODS=1",
 				);
 				INFOPLIST_FILE = YIBox/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1517,7 +1525,7 @@
 					"COCOAPODS=1",
 				);
 				INFOPLIST_FILE = YIBox/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

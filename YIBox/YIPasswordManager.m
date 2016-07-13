@@ -14,6 +14,7 @@
 	BKPasscodeViewController *viewController;
 }
 
+//@property (nonatomic, weak) BKPasscodeViewController *viewController;
 @property (nonatomic, strong) DidFinishedBlock didFinishedBlock;
 
 @end
@@ -47,7 +48,6 @@
 {
 	self.didFinishedBlock = finishBlock;
 	
-	
 	viewController = [[BKPasscodeViewController alloc] initWithNibName:nil bundle:nil];
 	viewController.delegate = self;
 	viewController.type = type;
@@ -57,7 +57,7 @@
 	
 	// Setup Touch ID manager
 	BKTouchIDManager *touchIDManager = [[BKTouchIDManager alloc] initWithKeychainServiceName:@"BKPasscodeSampleService"];
-	touchIDManager.promptText = @"BKPasscodeView Touch ID Demo";
+	touchIDManager.promptText = @"把手指放在Home键上即可！";
 	viewController.touchIDManager = touchIDManager;
 	
 	viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]
@@ -66,9 +66,6 @@
 													   action:@selector(passcodeViewCloseButtonPressed:)];
 	
 	completeBlock(viewController);
-	
-//	YIBaseNavigationController *bnc = [[YIBaseNavigationController alloc] initWithRootViewController:viewController];
-//	[self presentViewController:bnc animated:YES completion:nil];
 }
 
 - (void)passcodeViewCloseButtonPressed:(UIBarButtonItem *)item {
@@ -144,6 +141,7 @@
 	}
 	
 	[aViewController dismissViewControllerAnimated:YES completion:^{
+		viewController = nil;
 		self.didFinishedBlock();
 	}];
 }

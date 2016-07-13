@@ -31,7 +31,6 @@
 	return self;
 }
 
-
 + (void)loadBaseInit {
 	[self initUmeng];
 	[mGlobalData loadDefaultValue];

@@ -132,7 +132,7 @@
                             @{
                                     @"id" : @(2002),
                                     @"image" : @"my_share",
-                                    @"name" : @"分享是您对我们最大的鼓励",
+                                    @"name" : @"分享是您给我们最大的鼓励",
                                     @"detail" : @"",
                                     @"target" : [NSNull null]
                             },
