@@ -10,14 +10,18 @@
 {
 	UILabel *lblDisplay;
 	UIView *contentView;
+	
+	UIButton *previousBtn;
+	UILabel *lastLbl;
 }
-
 
 @end
 
 @implementation YICalculatorView
 
 @synthesize lblDisplay2;
+
+
 
 - (instancetype)init {
     self = [super init];
@@ -362,8 +366,6 @@
 	lastLbl = nil;
 }
 
-UIButton *previousBtn;
-
 - (void)operationAction:(UIButton *)button {
 	previousBtn.selected = NO;
 	button.selected = YES;
@@ -382,15 +384,15 @@ UIButton *previousBtn;
 	// 只打印值
 	lblDisplay.text = [NSString stringWithFormat:@"%lf",value];
 	// 格式化
-	NSString *numberText = [self formatterNumber:kCalculatorManager.currentNumber];
+	NSString *numberText = [self formatterNumber:self.calManager.currentNumber];
 	lblDisplay2.text = numberText;
 	
 	
 //	NSString *formatString;
 //	NSString *valueText;
-//	if (kCalculatorManager.isDecimal) {
-//		if (kCalculatorManager.decimals) {
-//			formatString = [NSString stringWithFormat:@"%%.%dlf", MIN(kCalculatorManager.decimals, kCalculatorManager.maxLengthDecimal)];
+//	if (self.calManager.isDecimal) {
+//		if (self.calManager.decimals) {
+//			formatString = [NSString stringWithFormat:@"%%.%dlf", MIN(self.calManager.decimals, self.calManager.maxLengthDecimal)];
 //			valueText = [NSString stringWithFormat:formatString,value];
 //		} else {
 //			formatString = @"%ld.";
@@ -403,30 +405,28 @@ UIButton *previousBtn;
 //	lblDisplay2.text = valueText;
 	
 	
-//	double decimal = kCalculatorManager.currentNumber - (long) kCalculatorManager.currentNumber;
+//	double decimal = self.calManager.currentNumber - (long) self.calManager.currentNumber;
 //	if (decimal) {
-//		NSString *decimalString = [@(kCalculatorManager.currentNumber) stringValue];
-//		kCalculatorManager.isDecimal = YES;
-//		kCalculatorManager.decimals = (int) [[[decimalString componentsSeparatedByString:@"."] lastObject] length];
+//		NSString *decimalString = [@(self.calManager.currentNumber) stringValue];
+//		self.calManager.isDecimal = YES;
+//		self.calManager.decimals = (int) [[[decimalString componentsSeparatedByString:@"."] lastObject] length];
 //	} else {
-//		kCalculatorManager.isDecimal = NO;
-//		kCalculatorManager.decimals = 0;
+//		self.calManager.isDecimal = NO;
+//		self.calManager.decimals = 0;
 //	}
 	
 	
-//	NSNumber *number = [@(kCalculatorManager.currentNumber) stringValue];
+//	NSNumber *number = [@(self.calManager.currentNumber) stringValue];
 }
 
 - (NSString *)formatterNumber:(double)number {
 	NSNumberFormatter *nf = [[NSNumberFormatter alloc] init];
 	[nf setNumberStyle:NSNumberFormatterDecimalStyle];
-	[nf setMaximumFractionDigits:kCalculatorManager.maxLengthDecimal];
-	[nf setMaximumIntegerDigits:kCalculatorManager.maxLengthNumber];
+	[nf setMaximumFractionDigits:self.calManager.maxLengthDecimal];
+	[nf setMaximumIntegerDigits:self.calManager.maxLengthNumber];
 	NSString *numberText = [nf stringFromNumber:@(number)];
 	return numberText;
 }
-
-UILabel *lastLbl = nil;
 
 float rightOffset = -60.f;
 float leftOffset = 20.f;
@@ -441,26 +441,21 @@ float separator = 0.5f;
 				  isOperator:(BOOL)isOperator
 					isResult:(BOOL)isResult {
 	// 异常输入就返回不画任何东西
-	if (kCalculatorManager.abnormalInput) {
+	if (self.calManager.abnormalInput) {
 		return;
 	}
 	
-	// 小数点时特别处理，先不画呢。
-	if ([[kCalculatorManager.inputs lastObject] intValue] == DIGIT_DOT) {
-//		return;
-	}
-	
 	// 按清除键的显示逻辑
-	if (OPERATOR_CLEAR == kCalculatorManager.writeOp) {
+	if (OPERATOR_CLEAR == self.calManager.writeOp) {
 		[self resetVerticalZone];
 		return;
 	}
 	
 	// 显示的时候带有结果值
 	if (isResult) {
-		if (kCalculatorManager.writeOp >= OPERATOR_DELETE && kCalculatorManager.writeOp <= OPERATOR_NEGATIVE) { // 一元操作符
+		if (self.calManager.writeOp >= OPERATOR_DELETE && self.calManager.writeOp <= OPERATOR_NEGATIVE) { // 一元操作符
 			UILabel *opLbl = [UILabel new];
-			opLbl.text = [YICalculatorManager signTextOnTag:kCalculatorManager.writeOp];
+			opLbl.text = [YICalculatorManager signTextOnTag:self.calManager.writeOp];
 			opLbl.font = [UIFont fontWithName:@"Menlo" size:20.f];
 			opLbl.textAlignment = NSTextAlignmentCenter;
 			opLbl.backgroundColor = kAppColorYellow;

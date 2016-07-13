@@ -36,8 +36,6 @@
 #define kSign @""
 
 
-#define kCalculatorManager [YICalculatorManager sharedManager]
-
 static const int DIGIT_ZERO = 1000;
 static const int DIGIT_ONE = 1001;
 static const int DIGIT_TWO = 1002;
@@ -95,8 +93,6 @@ static const int OPERATOR_EQUAL = 3005;
 #pragma mark - ---UI---
 
 
-+ (instancetype)sharedManager;
-
 #pragma mark -
 - (void)inputObject:(int)tag;
 
@@ -106,7 +102,6 @@ static const int OPERATOR_EQUAL = 3005;
 - (double)calCurrentNumberWithDot:(int)tag;
 
 - (double)calCurrentNumberWithTag:(int)tag;
-+ (void)checkRegularExpression;
 
 + (NSString *)signTextOnTag:(int)tag;
 @end

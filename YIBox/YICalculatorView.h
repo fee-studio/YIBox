@@ -4,6 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "YICalculatorManager.h"
 
 @protocol YICalculatorViewDelegate <NSObject>
 - (void)clickButtonTag:(int)tag;
@@ -16,17 +17,18 @@
 	UILabel *lblDisplay2;
 }
 
+@property (nonatomic, strong) YICalculatorManager *calManager;
 
 @property (nonatomic, weak) id<YICalculatorViewDelegate> delegate;
 
 @property (nonatomic, strong) UILabel *lblDisplay2;
 @property (nonatomic, strong) UIScrollView *scrollView;
 
-
 - (void)setDisplayLblText:(double)value;
-//- (NSString *)formatterNumber:(double)number;
-//- (void)drawLblText:(NSString *)text writeInLastLbl:(BOOL)isLast nextLine:(BOOL)next isOperator:(BOOL)isOperator;
-//- (void)drawLblCurNumberText:(double)curNumber operator:(int)operator writeInLastLbl:(BOOL)isLast nextLine:(BOOL)next;
-- (void)drawLblCurNumberText:(double)curNumber operator:(int)operator
-writeInLastLbl:(BOOL)isLast nextLine:(BOOL)next isOperator:(BOOL)isOperator isResult:(BOOL)isResult;
+- (void)drawLblCurNumberText:(double)curNumber
+					operator:(int)operator
+			  writeInLastLbl:(BOOL)isLast
+				    nextLine:(BOOL)next
+				  isOperator:(BOOL)isOperator
+					isResult:(BOOL)isResult;
 @end

@@ -11,8 +11,10 @@
 @interface YICalculatorVc () <YICalculatorViewDelegate>
 {
 	YICalculatorView *calculatorView;
-	YICalculatorManager *calManager;
+	
 }
+
+@property (nonatomic, strong) YICalculatorManager *calManager;
 
 @end
 
@@ -23,7 +25,7 @@
 - (instancetype)init {
 	self = [super init];
 	if (self) {
-		calManager = [YICalculatorManager sharedManager];
+		self.calManager = [[YICalculatorManager alloc] init];
 	}
 
 	return self;
@@ -43,27 +45,49 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//	calManager.calculatorView = calculatorView;
-//	self.edgesForExtendedLayout = UIRectEdgeAll;
 	
 	calculatorView = [[YICalculatorView alloc] init];
 	calculatorView.delegate = self;
+	calculatorView.calManager = self.calManager;
 	[self.view addSubview:calculatorView];
-	UIEdgeInsets padding = UIEdgeInsetsMake(64, 0, 0, 0);
+	UIEdgeInsets padding = UIEdgeInsetsMake(0, 0, 0, 0);
 	[calculatorView mas_makeConstraints:^(MASConstraintMaker *make) {
 		make.edges.equalTo(calculatorView.superview).with.insets(padding);
 	}];
+	
+	[self setupBackBtn];
+}
+
+// 加载工具栏
+- (void)setupBackBtn {
+	UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+	backBtn.alpha = 0.7f;
+	[backBtn setBackgroundImage:[UIImage imageNamed:@"iconfont-back"] forState:UIControlStateNormal];
+	[backBtn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:backBtn];
+	[backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+		make.left.equalTo(backBtn.superview).offset(10);
+		make.top.equalTo(backBtn.superview).offset(20);
+		make.width.equalTo(@50);
+		make.height.equalTo(@50);
+	}];
+}
+
+- (void)back {
+	[self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 //    [self.navigationController.navigationBar lt_setBackgroundColor:[UIColor clearColor]];
 //    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+	[self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
 //    [self.navigationController.navigationBar lt_reset];
+	[self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 - (void)viewDidLayoutSubviews {
@@ -74,7 +98,7 @@
 
 - (void)clickButtonTag:(int)tag {
 	// 每次输入 默认都是正常的输入
-	kCalculatorManager.abnormalInput = NO;
+	self.calManager.abnormalInput = NO;
 	
 	if (tag >= 3001 && tag <= 3005) {
 		// 加减乘除等于号(二元运算符)
@@ -87,19 +111,19 @@
 		[self numberPressed:tag];
 	}
 	
-	if (kCalculatorManager.abnormalInput == NO) {
+	if (self.calManager.abnormalInput == NO) {
 		// 记入输入队列
-		[kCalculatorManager inputObject:tag];
+		[self.calManager inputObject:tag];
 		
 		// 显示竖式
-		[calculatorView drawLblCurNumberText:kCalculatorManager.currentNumber
-									operator:kCalculatorManager.operator
-							  writeInLastLbl:kCalculatorManager.writeInLastLbl
-									nextLine:kCalculatorManager.writeNextLine
-								  isOperator:kCalculatorManager.writeIsOperator
-									isResult:kCalculatorManager.writeResult];
+		[calculatorView drawLblCurNumberText:self.calManager.currentNumber
+									operator:self.calManager.operator
+							  writeInLastLbl:self.calManager.writeInLastLbl
+									nextLine:self.calManager.writeNextLine
+								  isOperator:self.calManager.writeIsOperator
+									isResult:self.calManager.writeResult];
 		
-		kCalculatorManager.writeOp = OPERATOR_NULL;
+		self.calManager.writeOp = OPERATOR_NULL;
 	}
 }
 
@@ -108,20 +132,24 @@
 - (void)numberPressed:(int)tag {
     int digit = tag - 1000;
     // 计算当前的值
-    [kCalculatorManager calCurrentNumberWithDigit:digit];
-	[calculatorView setDisplayLblText:kCalculatorManager.currentNumber];
+    [self.calManager calCurrentNumberWithDigit:digit];
+	[calculatorView setDisplayLblText:self.calManager.currentNumber];
 }
 
 - (void)binaryOperatorPressed:(int)tag {
-	[kCalculatorManager calCurrentNumberWithBinaryOperator:tag];
-	[calculatorView setDisplayLblText:kCalculatorManager.currentNumber];
+	[self.calManager calCurrentNumberWithBinaryOperator:tag];
+	[calculatorView setDisplayLblText:self.calManager.currentNumber];
 }
 
 - (void)unaryOperatorPressed:(int)tag {
-	[kCalculatorManager calCurrentNumberWithUnaryOperator:tag];
-	[calculatorView setDisplayLblText:kCalculatorManager.currentNumber];
+	[self.calManager calCurrentNumberWithUnaryOperator:tag];
+	[calculatorView setDisplayLblText:self.calManager.currentNumber];
 }
 
+
+- (void)dealloc {
+	calculatorView = nil;
+}
 
 
 @end
