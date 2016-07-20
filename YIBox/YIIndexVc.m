@@ -45,6 +45,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
+
+	
+	
 //	UIImageView *bgIv = [UIImageView new];
 //	bgIv.image = [UIImage imageNamed:@"launch_bg2"];
 //	[self.view insertSubview:bgIv atIndex:0];
@@ -53,7 +56,34 @@
 //	}];
 	
 //	self.baseTableView.backgroundColor = [UIColor clearColor];
+	
+//	UIBarButtonItem *cancelBBI = [[UIBarButtonItem alloc] initWithTitle:@"取消"
+//																style:UIBarButtonItemStylePlain
+//															   target:self
+//															   action:@selector(cancelButtonTapped:)];
+//	self.navigationItem.leftBarButtonItem = cancelBBI;
+	
+//	[mNotificationCenter addObserver:self selector:@selector(defaultToolEnter:) name:@"default-tool-enter" object:nil];
+//	[mNotificationCenter postNotificationName:@"default-tool-enter" object:nil];
+
+	[self defaultToolEnter:nil];
 }
+
+- (void)defaultToolEnter:(id)sender {
+	YIBaseViewController *vc;
+	if (mGlobalData.homeVc == nil || [mGlobalData.homeVc isEqualToString:NSStringFromClass([self class])]) {
+		[mGlobalData setHomeVc:NSStringFromClass([YIIndexVc class])];
+	} else {
+		Class target = NSClassFromString(mGlobalData.homeVc);
+		vc = (YIBaseViewController *) [[target alloc] init];
+		[self.navigationController pushViewController:vc animated:NO];
+		return;
+	}
+}
+
+//- (void)cancelButtonTapped:(id)sender {
+//	[self dismissViewControllerAnimated:YES completion:nil];
+//}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -75,6 +105,7 @@
 }
 
 - (void)loadData {
+	/*
     NSString *flashlightDetail = @"";
     if (mGlobalData.flashlight.type == FlashlightTypeScreen) {
         flashlightDetail = @"屏幕光";
@@ -107,7 +138,7 @@
                                     @"target" : NSStringFromClass(YIFlashlightVc.class)
                             },
                             @{
-                                    @"id" : @(1003),
+                                    @"id" : @(1004),
                                     @"image" : @"qr_code_icon",
                                     @"name" : @"扫一扫/二维码",
                                     @"detail" : @"",
@@ -122,6 +153,13 @@
                             },
                     ],
                     @[
+                            @{
+                                    @"id" : @(2003),
+                                    @"image" : @"setting",
+                                    @"name" : @"设置",
+                                    @"detail" : @"",
+                                    @"target" : [NSNull null]
+                            },
                             @{
                                     @"id" : @(2001),
                                     @"image" : @"my_collection",
@@ -145,7 +183,12 @@
                             //                            },
                     ]
             ];
-
+	 */
+	
+	
+	NSString *pathIndexPlist = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"plist"];
+	NSArray *willTools = [NSArray arrayWithContentsOfFile:pathIndexPlist];
+	
     if (curPrivatePhotoEnterState == PPSEnterHideStateClosed) {
         NSDictionary *privatePhoto = @{
                 @"id" : @(1004),
@@ -198,7 +241,7 @@
 	NSNumber *itemId = _tools[indexPath.section][indexPath.row][@"id"];
 	NSInteger itemIdCode = [itemId integerValue];
 
-    if ([targetObject isEqual:[NSNull null]]) {
+    if ([targetObject isEmpty]) {
         if (itemIdCode == 1003) {
             [self openQrCodeVc];
 		} else if (itemIdCode == 2001) {
@@ -267,7 +310,7 @@
 				
 			}
 		}
-		
+
         Class target = NSClassFromString(targetObject);
         YIBaseViewController *vc = [[target alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
@@ -306,6 +349,8 @@
     }
     return nil;
 }
+
+#pragma mark -
 
 - (void)togglePrivatePhoto:(UITapGestureRecognizer *)tap {
 	curPrivatePhotoEnterState = !curPrivatePhotoEnterState;	

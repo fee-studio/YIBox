@@ -8,6 +8,7 @@
 
 #import "YIMessagesViewController.h"
 
+
 @interface YIBaseViewController ()
 
 @end
@@ -74,6 +75,21 @@
 #else
 	self.navigationItem.rightBarButtonItems = @[feedbackItem];
 #endif
+
+	/*
+    // 左侧按钮
+    if (mGlobalData.homeVc == nil
+            || [mGlobalData.homeVc isEqualToString:NSStringFromClass([YIIndexVc class])]
+            || [self isKindOfClass:[YIIndexVc class]]) {
+
+    } else {
+        UIBarButtonItem *homeBBi = [[UIBarButtonItem alloc] initWithTitle:@"首页"
+                                                                     style:UIBarButtonItemStylePlain
+                                                                    target:self
+                                                                    action:@selector(homeButtonTapped:)];
+        self.navigationItem.leftBarButtonItem = homeBBi;
+    }
+	 */
 }
 
 #if DEBUG
@@ -81,6 +97,13 @@
     [[FLEXManager sharedManager] showExplorer];
 }
 #endif
+
+//- (void)homeButtonTapped:(id)sender {
+//    YIIndexVc *vc = [[YIIndexVc alloc] init];
+//	YIBaseNavigationController *bnc = [[YIBaseNavigationController alloc] initWithRootViewController:vc];
+//	[self presentViewController:bnc animated:YES completion:nil];
+////    [self.navigationController pushViewController:vc animated:YES];
+//}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];

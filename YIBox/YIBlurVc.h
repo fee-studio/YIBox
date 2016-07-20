@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YIBaseToolVc.h"
 
-@interface YIBlurVc : YIBaseViewController
+@interface YIBlurVc : YIBaseToolVc
 
 @end

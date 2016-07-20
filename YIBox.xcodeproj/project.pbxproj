@@ -14,6 +14,8 @@
 		522AD5701C8C374800C851CD /* Launch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522AD56F1C8C374800C851CD /* Launch.xib */; };
 		522AD5721C8C417800C851CD /* launch_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 522AD5711C8C417800C851CD /* launch_logo@2x.png */; };
 		522EBA461C819428000BA98D /* YIBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 522EBA451C819428000BA98D /* YIBaseModel.m */; };
+		522F94D01D3676EE00494E02 /* index.plist in Resources */ = {isa = PBXBuildFile; fileRef = 522F94CF1D3676EE00494E02 /* index.plist */; };
+		522F94D31D367BE800494E02 /* setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 522F94D21D367BE800494E02 /* setting.plist */; };
 		523626331C7860B400B52C38 /* YIShareUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 523626321C7860B400B52C38 /* YIShareUtil.m */; };
 		523952081C7B526B00C80E09 /* crop@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 523952061C7B526B00C80E09 /* crop@2x.jpg */; };
 		523952091C7B526B00C80E09 /* success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 523952071C7B526B00C80E09 /* success@2x.png */; };
@@ -21,9 +23,6 @@
 		5246832E1C7C0DC300ED23FB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5246832D1C7C0DC300ED23FB /* StoreKit.framework */; };
 		524AE9C71C71647B001B5D5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524AE9C61C71647B001B5D5A /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		524AE9C81C71649B001B5D5A /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524AE9C41C7161CB001B5D5A /* Photos.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		524F59C01C95B84C00CF7421 /* YICalculatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 524F59B91C95B84C00CF7421 /* YICalculatorManager.m */; };
-		524F59C11C95B84C00CF7421 /* YICalculatorVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 524F59BA1C95B84C00CF7421 /* YICalculatorVc.m */; };
-		524F59C21C95B84C00CF7421 /* YICalculatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 524F59BB1C95B84C00CF7421 /* YICalculatorView.m */; };
 		52854B981C61F56D00AC8761 /* PECropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52854B8F1C61F56D00AC8761 /* PECropViewController.m */; };
 		52854B991C61F56D00AC8761 /* PECropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52854B911C61F56D00AC8761 /* PECropView.m */; };
 		52854B9A1C61F56D00AC8761 /* PECropRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52854B931C61F56D00AC8761 /* PECropRectView.m */; };
@@ -82,6 +81,10 @@
 		5286219E1C5E071A002A5FEC /* YIBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 528621921C5E071A002A5FEC /* YIBaseTableViewCell.m */; };
 		5286219F1C5E071A002A5FEC /* YIBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528621941C5E071A002A5FEC /* YIBaseTableViewController.m */; };
 		528621A01C5E071A002A5FEC /* YIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528621961C5E071A002A5FEC /* YIBaseViewController.m */; };
+		528A87F41D37CF9300CDE3D1 /* default-tool.plist in Resources */ = {isa = PBXBuildFile; fileRef = 528A87F31D37CF9300CDE3D1 /* default-tool.plist */; };
+		528A87F61D37D15D00CDE3D1 /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 528A87F51D37D15D00CDE3D1 /* home@2x.png */; };
+		528A87F91D37D21500CDE3D1 /* YIToolPickerVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 528A87F81D37D21500CDE3D1 /* YIToolPickerVc.m */; };
+		528A87FC1D37E17800CDE3D1 /* YIBaseToolVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 528A87FB1D37E17800CDE3D1 /* YIBaseToolVc.m */; };
 		528F81131C85CB08001600AD /* private_photos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 528F81121C85CB08001600AD /* private_photos@2x.png */; };
 		52B5BBD81C7C24970028049E /* iVersion.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 52B5BBD51C7C24970028049E /* iVersion.bundle */; };
 		52B5BBD91C7C24980028049E /* iVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B5BBD71C7C24970028049E /* iVersion.m */; };
@@ -91,6 +94,7 @@
 		52B5BBE21C7C39BF0028049E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B5BBDE1C7C39000028049E /* libz.tbd */; };
 		52B5BBE91C7C3A4F0028049E /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B5BBE41C7C3A4F0028049E /* libWeChatSDK.a */; };
 		52B5BBEA1C7C3A4F0028049E /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 52B5BBE51C7C3A4F0028049E /* read_me.txt */; };
+		52BB773C1D3E82190012D1FA /* mosaic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BB773B1D3E82190012D1FA /* mosaic@2x.png */; };
 		52D91FC21C8D116800FB131C /* launch_bg2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D91FC11C8D116800FB131C /* launch_bg2@2x.png */; };
 		52D91FC61C8D130500FB131C /* YIInitUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D91FC51C8D130500FB131C /* YIInitUtil.m */; };
 		52DFD85B1C881493002EB8E7 /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52DFD85A1C881493002EB8E7 /* placeholder.jpg */; };
@@ -100,74 +104,82 @@
 		52DFD86F1C897AFC002EB8E7 /* iconfont-select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52DFD86D1C897AFC002EB8E7 /* iconfont-select@2x.png */; };
 		52DFD8701C897AFC002EB8E7 /* iconfont-unselect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52DFD86E1C897AFC002EB8E7 /* iconfont-unselect@2x.png */; };
 		52DFD8721C897C4D002EB8E7 /* iconfont-iconfontsuo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52DFD8711C897C4D002EB8E7 /* iconfont-iconfontsuo@2x.png */; };
+		52EC9A511D3B7820005B8E7E /* EditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EC9A4E1D3B7820005B8E7E /* EditView.m */; };
+		52EC9A521D3B7820005B8E7E /* EditImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EC9A501D3B7820005B8E7E /* EditImageManager.m */; };
+		52EC9A541D3B84DE005B8E7E /* 5.pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52EC9A531D3B84DE005B8E7E /* 5.pic.jpg */; };
 		52F6C7201C5F5EDB00C086FF /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F6C71F1C5F5EDB00C086FF /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
 		52FB2D721CA22E9300A6F1BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FB2D711CA22E9300A6F1BC /* Foundation.framework */; };
 		52FB2D741CA22ECF00A6F1BC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FB2D731CA22ECF00A6F1BC /* AVFoundation.framework */; };
 		5BF2C012BBB88D4B4835261F /* my_collection@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C3F5911874E42BF8EB7F /* my_collection@2x.png */; };
-		5BF2C018ACF573F628A42F88 /* image_default@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C1D0B362A35C1360F299 /* image_default@2x.jpg */; };
-		5BF2C1359D5C1BCD246C72BF /* YIFlashlightVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C2F33B72ADF8D3126863 /* YIFlashlightVc.xib */; };
-		5BF2C1460526F2E7CFDAF6BD /* CodeScan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C395B44AFED158E2079D /* CodeScan.bundle */; };
-		5BF2C1B1909482A54057AC6E /* YIScanVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CD46CD92FDB9E4BCF90C /* YIScanVc.m */; };
+		5BF2C05556138D4757B02C60 /* YIPrivatePhotoVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C17F2DE39034B25251DC /* YIPrivatePhotoVc.m */; };
+		5BF2C05B7597B6B5B3BA6F74 /* YIIndexVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2CC0142F28EAFF89E10D4 /* YIIndexVc.xib */; };
+		5BF2C07A8113380CDADC2353 /* YIMosaicsVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C7B9CA39C35924918D29 /* YIMosaicsVc.xib */; };
+		5BF2C1AA12FD084956484CD1 /* flashlight64@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2CE965BAEDD8E35B7F427 /* flashlight64@2x.png */; };
+		5BF2C1DC0F69829A8F35E6C1 /* YICalculatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C89CE58DCC72FBA97F1B /* YICalculatorView.m */; };
 		5BF2C1FDC6E47D6A4C98142D /* my_setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C2CE3F6C67DE2D54AA17 /* my_setting@2x.png */; };
-		5BF2C21C5A8EBD8F070993A9 /* YITransitionPreviewToPhotoList.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C7B1F7539953E1548B2D /* YITransitionPreviewToPhotoList.m */; };
-		5BF2C29F4EFE65AF4C38BFAF /* YIMosaicsVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CD3A6FFC9F374E8E8EFF /* YIMosaicsVc.m */; };
-		5BF2C2F9D5B2686F1BBEA665 /* UIAlertView+LBXAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C506D037D6CB74196742 /* UIAlertView+LBXAlertAction.m */; };
-		5BF2C2FC6ACBA4F71C243CC3 /* YINineGridVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C1AA1D4DF1F7A38CAE80 /* YINineGridVc.m */; };
-		5BF2C35BC4B6401514A480D3 /* UIActionSheet+LBXAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CB2B230A44132C5634E8 /* UIActionSheet+LBXAlertAction.m */; };
+		5BF2C215DC8C751D180A316B /* BKPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C51895B306AD736BA05B /* BKPasscodeViewController.m */; };
+		5BF2C21820A03F3F3C93CB15 /* ScanResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CD71F797598BF3B74BCE /* ScanResultViewController.m */; };
+		5BF2C23E00499F4EB758F631 /* YIBlurVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2CEAEF1AC9017C5C92AD3 /* YIBlurVc.xib */; };
+		5BF2C31FF47CB310D9D7D8F7 /* CodeScan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2CB3C21C35ABC17247D9B /* CodeScan.bundle */; };
+		5BF2C35F3C8D23E4ED9AC02C /* SubLBXScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CA35BE559868D52E1266 /* SubLBXScanViewController.m */; };
+		5BF2C3FFCC46CEA66B09292D /* YIPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C08AF78758672BE19BB3 /* YIPhotoPreviewCell.m */; };
 		5BF2C40DE21CD536B46704BE /* flashlight_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C1260335ACA1CFEA0B10 /* flashlight_icon@2x.png */; };
 		5BF2C41A8117348839DD6F07 /* qr_code_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C7669AE69A67B61416BE /* qr_code_icon@2x.png */; };
-		5BF2C467CEEDE6D086535759 /* YIPrivateSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CD834128B0AAE005159C /* YIPrivateSetting.m */; };
+		5BF2C45053DA34FE09A75BAE /* placeholder_dropbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C2055DDEFBB11E93FA8D /* placeholder_dropbox@2x.png */; };
+		5BF2C46D3071E1862C9FDB5A /* YIPhotoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C72CBF5976994C1EF541 /* YIPhotoListCell.m */; };
+		5BF2C4BB81B115459A558B03 /* BKTouchIDSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C1580F2759AA8242F95D /* BKTouchIDSwitchView.m */; };
 		5BF2C4DC24585CDED0FD2773 /* icon_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C89614AB9A62D90D5531 /* icon_120.png */; };
-		5BF2C5084BB2CE95A1A476F9 /* YIPrivatePhotoVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C2BF6F9FAB99CD1AE745 /* YIPrivatePhotoVc.m */; };
-		5BF2C55FD75D73750D2A881A /* YIIndexVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C795AE2BD8209C276CFA /* YIIndexVc.xib */; };
-		5BF2C5DB75BC6B5A9BEA5D92 /* ScanResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2CD20FFB8D4E7CBDA2F37 /* ScanResultViewController.xib */; };
-		5BF2C6227CCC2BCC3DD3480E /* YINineGridVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C1B16020D5AB58A4D868 /* YINineGridVc.xib */; };
-		5BF2C6387FCB1426EEEC9963 /* BKShiftingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C05EB686EFB3FF437E6F /* BKShiftingView.m */; };
+		5BF2C4DFFB388C51170B8DE6 /* YIFlashlightVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2CFF8B6C09EB0DA41CB4C /* YIFlashlightVc.xib */; };
+		5BF2C5137A4E35066D20CCA6 /* YINineGridVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CDC0837B686B9922D430 /* YINineGridVc.m */; };
+		5BF2C525700AB9255DD63796 /* YIDonateVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C26E697EE3BADAAA457D /* YIDonateVc.m */; };
+		5BF2C5267DC5910E694020B6 /* YIPhotoCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C76483F27A24579D25A5 /* YIPhotoCollectionViewLayout.m */; };
+		5BF2C56390DA552761E3C4C3 /* YIPrivateSettingVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C48B54A6E60147A5D1D7 /* YIPrivateSettingVc.xib */; };
+		5BF2C5E7B88EA9FAE23BA848 /* YIPrivateSettingVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CB25E720794AB952CA01 /* YIPrivateSettingVc.m */; };
+		5BF2C63F8A10428F5FB1F1EF /* YIPrivateSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CCB77119D49FB445B76B /* YIPrivateSetting.m */; };
+		5BF2C6AA0C710A5D52526243 /* BKShiftingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C6CE2A3F0C27FEAB4076 /* BKShiftingView.m */; };
+		5BF2C6CC12F29B0DA8FD9540 /* TorchObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C17FC11FD661C1BC7931 /* TorchObject.m */; };
+		5BF2C6D3A1E9F6851AC97CB3 /* BKPasscodeView.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2CE9D4010C9B8C659F5B4 /* BKPasscodeView.strings */; };
 		5BF2C6F3FDB920B805668003 /* gaosimohu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2CE30805162FA6E9E24D7 /* gaosimohu_icon@2x.png */; };
-		5BF2C73A33EA94AEFE7F0B27 /* CheckmarkUnselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C05128C200B5C09B84CB /* CheckmarkUnselected@2x.png */; };
-		5BF2C781D5D20DB9378B19A4 /* BKPasscodeDummyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C71DB66CF62A36363BC3 /* BKPasscodeDummyViewController.m */; };
-		5BF2C7A49751BB98A05B9C19 /* BKPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CBAC4E83DCECB41656F1 /* BKPasscodeViewController.m */; };
-		5BF2C7D051317E41E6864AB6 /* YIIndexVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CFB4FE406A8BFFE67997 /* YIIndexVc.m */; };
+		5BF2C733C4BCB60F0CF43376 /* BKPasscodeField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C807008355418EF187AB /* BKPasscodeField.m */; };
+		5BF2C77A77430C320084DFB5 /* YIMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C91322F55DB17F366130 /* YIMessagesViewController.m */; };
+		5BF2C7B4EECB4A9F6CA95FE7 /* YITransitionPreviewToPhotoList.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C360DE72AAC22F1069AC /* YITransitionPreviewToPhotoList.m */; };
+		5BF2C80E46DD2FBE7413FB8D /* YIFlashlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C72ABFA79E8533C063F3 /* YIFlashlight.m */; };
+		5BF2C82CA70F58CB54AC67B5 /* LBXAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C47624AA63716158510D /* LBXAlertAction.m */; };
+		5BF2C834197F560F810E7D11 /* YIPrivatePhotoVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C93AE39C884E3A7D3480 /* YIPrivatePhotoVc.xib */; };
 		5BF2C835DBAECBD192344958 /* failure@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C289F741EBE6C11E6227 /* failure@2x.png */; };
-		5BF2C8597CABE212F9900070 /* MyQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CC7B525B61B5675639F9 /* MyQRViewController.m */; };
+		5BF2C85DBB2B2C4AB3FF4BD6 /* YIPreviewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CD3EF1E40C2E6B2727A9 /* YIPreviewLayout.m */; };
 		5BF2C87637A7C71B4469747B /* my_feedback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C99452BADBABF0FDB4DF /* my_feedback@2x.png */; };
-		5BF2C8AE54D44B05C2127631 /* SubLBXScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C3D1F979B3108D1D23C6 /* SubLBXScanViewController.m */; };
-		5BF2C8AF8B1C31AC59900499 /* YIPhotoPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C4C204FFD3DD162454FA /* YIPhotoPreviewViewController.m */; };
-		5BF2C8B2B002D1D943691555 /* BKPasscodeView.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C1646CAAE9489CEB1AE5 /* BKPasscodeView.strings */; };
-		5BF2C8E925324A29F6D567B7 /* flashlight64@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C496F68A81666A4E325D /* flashlight64@2x.png */; };
-		5BF2C907208DDECB4C30D9EC /* YIPreviewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C3F3E2131D28BDEBA832 /* YIPreviewLayout.m */; };
-		5BF2C9094B42E1A5CF93408D /* BKPasscodeInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C0F915FACEE40C54BC63 /* BKPasscodeInputView.m */; };
-		5BF2C91298F84A7E171EB01C /* YIMessagesModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CA7D6850DC0F50CE42F3 /* YIMessagesModelData.m */; };
-		5BF2C9839DB8B30484BACCFC /* YIPasswordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C64B778FB33F67A3516E /* YIPasswordManager.m */; };
-		5BF2C9AD5693016D0C09C8E8 /* YIPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CC755F190BB06141F13B /* YIPhotoPreviewCell.m */; };
+		5BF2C883DBAAEBE00D3A4D65 /* YIIndexVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C8862D14D0BAEFD2B38E /* YIIndexVc.m */; };
+		5BF2C887B8CF3CB6EAB8C9F8 /* YIBlurVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CC1DB248B482063342B6 /* YIBlurVc.m */; };
+		5BF2C89212698AE10711F15B /* AFViewShaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CE4E4A613C01F402BF9D /* AFViewShaker.m */; };
+		5BF2C89926C2045E34004FE4 /* YISettingVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C90E937FEDF9ED69DEB6 /* YISettingVc.m */; };
+		5BF2C8A6511F137A0BF5C509 /* CheckmarkUnselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C62C3E67E0024C4E377B /* CheckmarkUnselected@2x.png */; };
+		5BF2C8B8A9F823100174B278 /* YIFlashlightVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C0D3A41490754AA795D1 /* YIFlashlightVc.m */; };
+		5BF2C8D5EACB187BFAB98A88 /* YINineGridVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2CE7F55CB0123BA752664 /* YINineGridVc.xib */; };
+		5BF2C980BF241F0CE06C2B16 /* YICalculatorVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CBA4F46668A4A72AFA26 /* YICalculatorVc.m */; };
+		5BF2C982CFAD2EFB141CBAA2 /* BKTouchIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C8F65C909CD53FB8A3CC /* BKTouchIDManager.m */; };
+		5BF2C9981BD0A7C1ACA69B85 /* image_default@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C6593026822C6E4CD204 /* image_default@2x.jpg */; };
+		5BF2C99B46F722514D7592F0 /* MyQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C282608150FCECE4F0BD /* MyQRViewController.m */; };
+		5BF2C9C7E4CE20203447B59C /* YIMosaicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C4C00CF1AD78CCAEB680 /* YIMosaicsView.m */; };
 		5BF2C9D3EB5004971B2B3BC5 /* my_tested@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2CBC74DCF6F49870DE08C /* my_tested@2x.png */; };
-		5BF2C9D5DAF9D0DA2C4CD219 /* YIFlashlightVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C3B8236BA665309D1E46 /* YIFlashlightVc.m */; };
-		5BF2C9DFDE13D68B28FC47A5 /* YIPhotoCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C4FBEC50CB9D80460216 /* YIPhotoCollectionViewLayout.m */; };
-		5BF2C9FA6D678BCBDD56E7CE /* LBXAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CE92F2CAE6B5795F739C /* LBXAlertAction.m */; };
-		5BF2CA5C8474F461C440068F /* BKTouchIDSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CC5A32ABE5B32A30C64B /* BKTouchIDSwitchView.m */; };
-		5BF2CA873164115027EDAFFC /* YIBlurVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CCE811C0DF3AD5E44EEB /* YIBlurVc.m */; };
+		5BF2CA3562E34F9E63250450 /* YIPhotoPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CF6F5542A698E50F0456 /* YIPhotoPreviewViewController.m */; };
 		5BF2CA96DD755E2BD301EFCC /* my_share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C7E71A50C089D07A4C10 /* my_share@2x.png */; };
-		5BF2CACF0CE6C997B094C61E /* YIDonateVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C335A6111E9CE3B81D5C /* YIDonateVc.xib */; };
-		5BF2CB284521133B085695E4 /* YIDonateVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CA654FE043E21EDC8B4D /* YIDonateVc.m */; };
-		5BF2CB2F1D53CC9D0D2C785B /* YIPrivateSettingVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C224EC4EED0F618B90B9 /* YIPrivateSettingVc.xib */; };
-		5BF2CBD2F469A3B5C827E31D /* AFViewShaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CB212790D7204DC6138B /* AFViewShaker.m */; };
+		5BF2CADBCBC0F4B5C3C226FA /* Checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C56DAB5E6C94D13ADE56 /* Checkmark@2x.png */; };
+		5BF2CB018AD561504775584A /* YICalculatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CA3CFBC742864549F796 /* YICalculatorManager.m */; };
+		5BF2CB77859DF04EB2CAB0FE /* BKPasscodeInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C708152D5797E46F836A /* BKPasscodeInputView.m */; };
+		5BF2CBF27DECDB423DD331B7 /* UIActionSheet+LBXAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CF4DD9AE8B8E6FA2ACB5 /* UIActionSheet+LBXAlertAction.m */; };
 		5BF2CC036B9027C4FE9B3BDE /* ninegrid_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C117B1657329DBCBA18E /* ninegrid_icon@2x.png */; };
-		5BF2CC33313A0BEABCEE15B5 /* YITransitionPhotoListToPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C8DC90CB895494605447 /* YITransitionPhotoListToPreview.m */; };
-		5BF2CCCA72DB079215334A01 /* YIMosaicsVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2CC501B1D46B014C5C7E5 /* YIMosaicsVc.xib */; };
-		5BF2CCCA8FD89873A3889C8E /* BKTouchIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CDD94CF1DF7B91B0D4FE /* BKTouchIDManager.m */; };
-		5BF2CCDD32EC0762C841AE41 /* YIBlurVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C002DD6085B87367AF23 /* YIBlurVc.xib */; };
-		5BF2CD69A2BF8682167DD3D2 /* YIPrivateSettingVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C62FFF1E90376C6CDCE9 /* YIPrivateSettingVc.m */; };
-		5BF2CD85FBEB54921802ACF2 /* TorchObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C1176F9B37D9A2B072F9 /* TorchObject.m */; };
-		5BF2CDC1139F31928FB4EA64 /* Checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C895CD5B4A7F22F0578B /* Checkmark@2x.png */; };
-		5BF2CDD3B55C202D4883EA60 /* NSUserDefaults+DemoSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C2A78DB0B7CE987ED1D7 /* NSUserDefaults+DemoSettings.m */; };
-		5BF2CDE198B0F03E2E91FB35 /* YIPhotoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C2402C826548AAB92C71 /* YIPhotoListCell.m */; };
-		5BF2CE15B73E7E074DE17101 /* ScanResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CCE7B6CB758321C76E37 /* ScanResultViewController.m */; };
-		5BF2CE42C272265CF5676499 /* YIPrivatePhotoVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C874846470ACAD2342DB /* YIPrivatePhotoVc.xib */; };
-		5BF2CE9BE23548F66CEB489E /* YIMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CFF75F545ACC404B9DDD /* YIMessagesViewController.m */; };
-		5BF2CED2D90C5A2CDD8774D5 /* BKPasscodeLockScreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C2F0C7D74714881791D0 /* BKPasscodeLockScreenManager.m */; };
-		5BF2CF597D271CECA1AFB7ED /* BKPasscodeField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CAC5BD9A49D05F392223 /* BKPasscodeField.m */; };
-		5BF2CF94DC59D2AB58E550D6 /* YIFlashlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C69B4859B7FAE884AFDB /* YIFlashlight.m */; };
-		5BF2CFEF780927DC9DF9BB5B /* placeholder_dropbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C38AEB8A5ABD57E2DF70 /* placeholder_dropbox@2x.png */; };
+		5BF2CC8290DC660A87806B86 /* YIScanVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C4DDCA6BF876C59EFEBC /* YIScanVc.m */; };
+		5BF2CCDB654C1492D0CBEDFD /* UIAlertView+LBXAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C867D1AE915F090E1593 /* UIAlertView+LBXAlertAction.m */; };
+		5BF2CD61FF4539421EF218ED /* ScanResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2C1A4B5A5FD28DB259AF4 /* ScanResultViewController.xib */; };
+		5BF2CD728CB563451386FD25 /* YITransitionPhotoListToPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CB092DC636633167ABAA /* YITransitionPhotoListToPreview.m */; };
+		5BF2CDEBF7F9F4D43E6D8883 /* BKPasscodeDummyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C12397D13A186DE86AE9 /* BKPasscodeDummyViewController.m */; };
+		5BF2CE2DA133CFD2D2B4D46A /* YIDonateVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF2CDEF743F7222C50DCE10 /* YIDonateVc.xib */; };
+		5BF2CED932560B2A4FE0BDA8 /* NSUserDefaults+DemoSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2CF46BF382AABEC49D5C4 /* NSUserDefaults+DemoSettings.m */; };
+		5BF2CEEE58BD0869E72BAF41 /* BKPasscodeLockScreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C531922610C2D7A1C251 /* BKPasscodeLockScreenManager.m */; };
+		5BF2CF29037743A5E370986F /* YIPasswordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C7600F38473194672A10 /* YIPasswordManager.m */; };
+		5BF2CF3EEB9B61CA29674FEF /* YIMessagesModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C65BE709CE694D599979 /* YIMessagesModelData.m */; };
+		5BF2CFBEB134559ED894D835 /* YIMosaicsVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2C362226EA6CDD9636841 /* YIMosaicsVc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,6 +210,8 @@
 		522AD5711C8C417800C851CD /* launch_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch_logo@2x.png"; sourceTree = "<group>"; };
 		522EBA441C819428000BA98D /* YIBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIBaseModel.h; sourceTree = "<group>"; };
 		522EBA451C819428000BA98D /* YIBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIBaseModel.m; sourceTree = "<group>"; };
+		522F94CF1D3676EE00494E02 /* index.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = index.plist; sourceTree = "<group>"; };
+		522F94D21D367BE800494E02 /* setting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = setting.plist; sourceTree = "<group>"; };
 		523626311C7860B400B52C38 /* YIShareUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIShareUtil.h; sourceTree = "<group>"; };
 		523626321C7860B400B52C38 /* YIShareUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIShareUtil.m; sourceTree = "<group>"; };
 		523952061C7B526B00C80E09 /* crop@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "crop@2x.jpg"; sourceTree = "<group>"; };
@@ -206,12 +220,6 @@
 		5246832D1C7C0DC300ED23FB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		524AE9C41C7161CB001B5D5A /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		524AE9C61C71647B001B5D5A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		524F59B81C95B84C00CF7421 /* YICalculatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YICalculatorManager.h; sourceTree = "<group>"; };
-		524F59B91C95B84C00CF7421 /* YICalculatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YICalculatorManager.m; sourceTree = "<group>"; };
-		524F59BA1C95B84C00CF7421 /* YICalculatorVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YICalculatorVc.m; sourceTree = "<group>"; };
-		524F59BB1C95B84C00CF7421 /* YICalculatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YICalculatorView.m; sourceTree = "<group>"; };
-		524F59BC1C95B84C00CF7421 /* YICalculatorVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YICalculatorVc.h; sourceTree = "<group>"; };
-		524F59BD1C95B84C00CF7421 /* YICalculatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YICalculatorView.h; sourceTree = "<group>"; };
 		52854B8E1C61F56D00AC8761 /* PECropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PECropViewController.h; sourceTree = "<group>"; };
 		52854B8F1C61F56D00AC8761 /* PECropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PECropViewController.m; sourceTree = "<group>"; };
 		52854B901C61F56D00AC8761 /* PECropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PECropView.h; sourceTree = "<group>"; };
@@ -331,6 +339,12 @@
 		528621941C5E071A002A5FEC /* YIBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIBaseTableViewController.m; sourceTree = "<group>"; };
 		528621951C5E071A002A5FEC /* YIBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIBaseViewController.h; sourceTree = "<group>"; };
 		528621961C5E071A002A5FEC /* YIBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIBaseViewController.m; sourceTree = "<group>"; };
+		528A87F31D37CF9300CDE3D1 /* default-tool.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "default-tool.plist"; sourceTree = "<group>"; };
+		528A87F51D37D15D00CDE3D1 /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
+		528A87F71D37D21500CDE3D1 /* YIToolPickerVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIToolPickerVc.h; sourceTree = "<group>"; };
+		528A87F81D37D21500CDE3D1 /* YIToolPickerVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIToolPickerVc.m; sourceTree = "<group>"; };
+		528A87FA1D37E17800CDE3D1 /* YIBaseToolVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIBaseToolVc.h; sourceTree = "<group>"; };
+		528A87FB1D37E17800CDE3D1 /* YIBaseToolVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIBaseToolVc.m; sourceTree = "<group>"; };
 		528F81121C85CB08001600AD /* private_photos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "private_photos@2x.png"; sourceTree = "<group>"; };
 		52B5BBD51C7C24970028049E /* iVersion.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iVersion.bundle; sourceTree = "<group>"; };
 		52B5BBD61C7C24970028049E /* iVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iVersion.h; sourceTree = "<group>"; };
@@ -344,6 +358,7 @@
 		52B5BBE61C7C3A4F0028049E /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
 		52B5BBE71C7C3A4F0028049E /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		52B5BBE81C7C3A4F0028049E /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		52BB773B1D3E82190012D1FA /* mosaic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mosaic@2x.png"; sourceTree = "<group>"; };
 		52D91FC11C8D116800FB131C /* launch_bg2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch_bg2@2x.png"; sourceTree = "<group>"; };
 		52D91FC41C8D130500FB131C /* YIInitUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIInitUtil.h; sourceTree = "<group>"; };
 		52D91FC51C8D130500FB131C /* YIInitUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIInitUtil.m; sourceTree = "<group>"; };
@@ -355,116 +370,131 @@
 		52DFD86D1C897AFC002EB8E7 /* iconfont-select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-select@2x.png"; sourceTree = "<group>"; };
 		52DFD86E1C897AFC002EB8E7 /* iconfont-unselect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-unselect@2x.png"; sourceTree = "<group>"; };
 		52DFD8711C897C4D002EB8E7 /* iconfont-iconfontsuo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-iconfontsuo@2x.png"; sourceTree = "<group>"; };
+		52EC9A4D1D3B7820005B8E7E /* EditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditView.h; sourceTree = "<group>"; };
+		52EC9A4E1D3B7820005B8E7E /* EditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditView.m; sourceTree = "<group>"; };
+		52EC9A4F1D3B7820005B8E7E /* EditImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditImageManager.h; sourceTree = "<group>"; };
+		52EC9A501D3B7820005B8E7E /* EditImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditImageManager.m; sourceTree = "<group>"; };
+		52EC9A531D3B84DE005B8E7E /* 5.pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.pic.jpg; sourceTree = "<group>"; };
 		52F6C71E1C5F5EDB00C086FF /* ALAssetsLibrary+CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+CustomPhotoAlbum.h"; sourceTree = "<group>"; };
 		52F6C71F1C5F5EDB00C086FF /* ALAssetsLibrary+CustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+CustomPhotoAlbum.m"; sourceTree = "<group>"; };
 		52FB2D711CA22E9300A6F1BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		52FB2D731CA22ECF00A6F1BC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		5BF2C002DD6085B87367AF23 /* YIBlurVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YIBlurVc.xib; sourceTree = "<group>"; };
-		5BF2C01B6A4F9127A4CE33E4 /* BKShiftingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKShiftingView.h; sourceTree = "<group>"; };
-		5BF2C05128C200B5C09B84CB /* CheckmarkUnselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CheckmarkUnselected@2x.png"; sourceTree = "<group>"; };
-		5BF2C05EB686EFB3FF437E6F /* BKShiftingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKShiftingView.m; sourceTree = "<group>"; };
-		5BF2C0F915FACEE40C54BC63 /* BKPasscodeInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKPasscodeInputView.m; sourceTree = "<group>"; };
-		5BF2C1176F9B37D9A2B072F9 /* TorchObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorchObject.m; sourceTree = "<group>"; };
+		5BF2C027736EC7FC249CCEF5 /* YIScanVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIScanVc.h; sourceTree = "<group>"; };
+		5BF2C08AF78758672BE19BB3 /* YIPhotoPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIPhotoPreviewCell.m; sourceTree = "<group>"; };
+		5BF2C0BAF55B9C218CF2C5C9 /* ScanResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanResultViewController.h; sourceTree = "<group>"; };
+		5BF2C0D3A41490754AA795D1 /* YIFlashlightVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIFlashlightVc.m; sourceTree = "<group>"; };
 		5BF2C117B1657329DBCBA18E /* ninegrid_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ninegrid_icon@2x.png"; sourceTree = "<group>"; };
+		5BF2C12397D13A186DE86AE9 /* BKPasscodeDummyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKPasscodeDummyViewController.m; sourceTree = "<group>"; };
 		5BF2C1260335ACA1CFEA0B10 /* flashlight_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight_icon@2x.png"; sourceTree = "<group>"; };
-		5BF2C161438148EA312A6CA3 /* YIFlashlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIFlashlight.h; sourceTree = "<group>"; };
-		5BF2C1AA1D4DF1F7A38CAE80 /* YINineGridVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YINineGridVc.m; sourceTree = "<group>"; };
-		5BF2C1AF18ED6555E7EBC7C2 /* BKTouchIDSwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTouchIDSwitchView.h; sourceTree = "<group>"; };
-		5BF2C1B16020D5AB58A4D868 /* YINineGridVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YINineGridVc.xib; sourceTree = "<group>"; };
-		5BF2C1D0B362A35C1360F299 /* image_default@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "image_default@2x.jpg"; sourceTree = "<group>"; };
-		5BF2C1DD46E9029C36A76F00 /* YIPasswordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIPasswordManager.h; sourceTree = "<group>"; };
-		5BF2C21FB93DE4FE26D86057 /* YIFlashlightVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIFlashlightVc.h; sourceTree = "<group>"; };
-		5BF2C224EC4EED0F618B90B9 /* YIPrivateSettingVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YIPrivateSettingVc.xib; sourceTree = "<group>"; };
-		5BF2C22B130339055C8DC06C /* BKPasscodeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKPasscodeUtils.h; sourceTree = "<group>"; };
-		5BF2C2402C826548AAB92C71 /* YIPhotoListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIPhotoListCell.m; sourceTree = "<group>"; };
+		5BF2C1580F2759AA8242F95D /* BKTouchIDSwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTouchIDSwitchView.m; sourceTree = "<group>"; };
+		5BF2C171349BE29FED58840A /* YIPhotoCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIPhotoCollectionViewLayout.h; sourceTree = "<group>"; };
+		5BF2C17F2DE39034B25251DC /* YIPrivatePhotoVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIPrivatePhotoVc.m; sourceTree = "<group>"; };
+		5BF2C17FC11FD661C1BC7931 /* TorchObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorchObject.m; sourceTree = "<group>"; };
+		5BF2C18D1535F211DE9B9E58 /* LBXAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXAlertAction.h; sourceTree = "<group>"; };
+		5BF2C1A4B5A5FD28DB259AF4 /* ScanResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanResultViewController.xib; sourceTree = "<group>"; };
+		5BF2C2055DDEFBB11E93FA8D /* placeholder_dropbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder_dropbox@2x.png"; sourceTree = "<group>"; };
+		5BF2C22B2522C18B10351928 /* zh-Hans */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/BKPasscodeView.strings"; sourceTree = "<group>"; };
+		5BF2C26E697EE3BADAAA457D /* YIDonateVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIDonateVc.m; sourceTree = "<group>"; };
+		5BF2C282608150FCECE4F0BD /* MyQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyQRViewController.m; sourceTree = "<group>"; };
 		5BF2C289F741EBE6C11E6227 /* failure@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "failure@2x.png"; sourceTree = "<group>"; };
-		5BF2C297A0BEEB4DF8CAE675 /* YIIndexVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIIndexVc.h; sourceTree = "<group>"; };
-		5BF2C2A78DB0B7CE987ED1D7 /* NSUserDefaults+DemoSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+DemoSettings.m"; sourceTree = "<group>"; };
-		5BF2C2BD5B2EB6D4EE8538BF /* YIMosaicsVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMosaicsVc.h; sourceTree = "<group>"; };
-		5BF2C2BF6F9FAB99CD1AE745 /* YIPrivatePhotoVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIPrivatePhotoVc.m; sourceTree = "<group>"; };
+		5BF2C2AF94CD43E8B9A3D18B /* YIPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIPhotoPreviewCell.h; sourceTree = "<group>"; };
 		5BF2C2CE3F6C67DE2D54AA17 /* my_setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my_setting@2x.png"; sourceTree = "<group>"; };
-		5BF2C2F0C7D74714881791D0 /* BKPasscodeLockScreenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKPasscodeLockScreenManager.m; sourceTree = "<group>"; };
-		5BF2C2F33B72ADF8D3126863 /* YIFlashlightVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YIFlashlightVc.xib; sourceTree = "<group>"; };
-		5BF2C335A6111E9CE3B81D5C /* YIDonateVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YIDonateVc.xib; sourceTree = "<group>"; };
-		5BF2C38AEB8A5ABD57E2DF70 /* placeholder_dropbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder_dropbox@2x.png"; sourceTree = "<group>"; };
-		5BF2C395B44AFED158E2079D /* CodeScan.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CodeScan.bundle; sourceTree = "<group>"; };
-		5BF2C3B8236BA665309D1E46 /* YIFlashlightVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIFlashlightVc.m; sourceTree = "<group>"; };
-		5BF2C3D1F979B3108D1D23C6 /* SubLBXScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubLBXScanViewController.m; sourceTree = "<group>"; };
-		5BF2C3F3E2131D28BDEBA832 /* YIPreviewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIPreviewLayout.m; sourceTree = "<group>"; };
+		5BF2C2DA0CB34322414F9A09 /* TorchObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorchObject.h; sourceTree = "<group>"; };
+		5BF2C34D0DC572B5EA2E63D8 /* BKPasscodeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKPasscodeUtils.h; sourceTree = "<group>"; };
+		5BF2C360DE72AAC22F1069AC /* YITransitionPreviewToPhotoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YITransitionPreviewToPhotoList.m; sourceTree = "<group>"; };
+		5BF2C362226EA6CDD9636841 /* YIMosaicsVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMosaicsVc.m; sourceTree = "<group>"; };
+		5BF2C3AD5AEC9F0D8EE522B4 /* BKShiftingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKShiftingView.h; sourceTree = "<group>"; };
+		5BF2C3EDE63F18A54BB9D610 /* AFViewShaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFViewShaker.h; sourceTree = "<group>"; };
 		5BF2C3F5911874E42BF8EB7F /* my_collection@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my_collection@2x.png"; sourceTree = "<group>"; };
-		5BF2C440824FA41AAB4833F8 /* YIDonateVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIDonateVc.h; sourceTree = "<group>"; };
-		5BF2C447BA6419C74569C997 /* ScanResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanResultViewController.h; sourceTree = "<group>"; };
-		5BF2C4578F0B16BC11AAE3A0 /* YIPrivateSettingVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIPrivateSettingVc.h; sourceTree = "<group>"; };
-		5BF2C496F68A81666A4E325D /* flashlight64@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight64@2x.png"; sourceTree = "<group>"; };
-		5BF2C4C204FFD3DD162454FA /* YIPhotoPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIPhotoPreviewViewController.m; sourceTree = "<group>"; };
-		5BF2C4E60E7E1677A3DCBDA0 /* YIMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMessagesViewController.h; sourceTree = "<group>"; };
-		5BF2C4F28FB2121C058CF410 /* YIPrivatePhotoVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIPrivatePhotoVc.h; sourceTree = "<group>"; };
-		5BF2C4FBEC50CB9D80460216 /* YIPhotoCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIPhotoCollectionViewLayout.m; sourceTree = "<group>"; };
-		5BF2C506D037D6CB74196742 /* UIAlertView+LBXAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+LBXAlertAction.m"; sourceTree = "<group>"; };
-		5BF2C59D2C3FA283552B87C2 /* YIPhotoPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIPhotoPreviewViewController.h; sourceTree = "<group>"; };
-		5BF2C62FFF1E90376C6CDCE9 /* YIPrivateSettingVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIPrivateSettingVc.m; sourceTree = "<group>"; };
-		5BF2C631A48FF03B99DD0D00 /* LBXAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXAlertAction.h; sourceTree = "<group>"; };
-		5BF2C64B778FB33F67A3516E /* YIPasswordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIPasswordManager.m; sourceTree = "<group>"; };
-		5BF2C64ECCA48E879B34DC28 /* MyQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyQRViewController.h; sourceTree = "<group>"; };
-		5BF2C69B4859B7FAE884AFDB /* YIFlashlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIFlashlight.m; sourceTree = "<group>"; };
-		5BF2C6ADC3F62C4E7121A5BF /* Base */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/BKPasscodeView.strings; sourceTree = "<group>"; };
-		5BF2C71DB66CF62A36363BC3 /* BKPasscodeDummyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKPasscodeDummyViewController.m; sourceTree = "<group>"; };
-		5BF2C76100CEDF3984D78E4A /* NSUserDefaults+DemoSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+DemoSettings.h"; sourceTree = "<group>"; };
+		5BF2C45C5D2359735104DDF2 /* YICalculatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YICalculatorView.h; sourceTree = "<group>"; };
+		5BF2C47624AA63716158510D /* LBXAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXAlertAction.m; sourceTree = "<group>"; };
+		5BF2C48B54A6E60147A5D1D7 /* YIPrivateSettingVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YIPrivateSettingVc.xib; sourceTree = "<group>"; };
+		5BF2C4C00CF1AD78CCAEB680 /* YIMosaicsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMosaicsView.m; sourceTree = "<group>"; };
+		5BF2C4DDCA6BF876C59EFEBC /* YIScanVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIScanVc.m; sourceTree = "<group>"; };
+		5BF2C4EA0607A65B6CCA2A1A /* SubLBXScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubLBXScanViewController.h; sourceTree = "<group>"; };
+		5BF2C4EC947085174C006A5F /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BKPasscodeView.strings; sourceTree = "<group>"; };
+		5BF2C51615B59E96199E4893 /* YIPrivatePhotoVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIPrivatePhotoVc.h; sourceTree = "<group>"; };
+		5BF2C51895B306AD736BA05B /* BKPasscodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKPasscodeViewController.m; sourceTree = "<group>"; };
+		5BF2C51F009AFC741608DC27 /* BKPasscodeInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKPasscodeInputView.h; sourceTree = "<group>"; };
+		5BF2C52F078CD43E838F0769 /* BKTouchIDSwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTouchIDSwitchView.h; sourceTree = "<group>"; };
+		5BF2C531922610C2D7A1C251 /* BKPasscodeLockScreenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKPasscodeLockScreenManager.m; sourceTree = "<group>"; };
+		5BF2C55F5A2DC64A31968649 /* MyQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyQRViewController.h; sourceTree = "<group>"; };
+		5BF2C56DAB5E6C94D13ADE56 /* Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checkmark@2x.png"; sourceTree = "<group>"; };
+		5BF2C57E5BB8F8381A84DE0A /* NSUserDefaults+DemoSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+DemoSettings.h"; sourceTree = "<group>"; };
+		5BF2C5A543977F4E92FFEC41 /* YIPasswordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIPasswordManager.h; sourceTree = "<group>"; };
+		5BF2C5FC8872D0309FA198EA /* YIFlashlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIFlashlight.h; sourceTree = "<group>"; };
+		5BF2C60208E2006F349EE601 /* BKPasscodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKPasscodeViewController.h; sourceTree = "<group>"; };
+		5BF2C62C3E67E0024C4E377B /* CheckmarkUnselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CheckmarkUnselected@2x.png"; sourceTree = "<group>"; };
+		5BF2C6593026822C6E4CD204 /* image_default@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "image_default@2x.jpg"; sourceTree = "<group>"; };
+		5BF2C65BE709CE694D599979 /* YIMessagesModelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMessagesModelData.m; sourceTree = "<group>"; };
+		5BF2C6783155789C32DF83CE /* YITransitionPhotoListToPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YITransitionPhotoListToPreview.h; sourceTree = "<group>"; };
+		5BF2C6CE2A3F0C27FEAB4076 /* BKShiftingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKShiftingView.m; sourceTree = "<group>"; };
+		5BF2C708152D5797E46F836A /* BKPasscodeInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKPasscodeInputView.m; sourceTree = "<group>"; };
+		5BF2C72ABFA79E8533C063F3 /* YIFlashlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIFlashlight.m; sourceTree = "<group>"; };
+		5BF2C72CBF5976994C1EF541 /* YIPhotoListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIPhotoListCell.m; sourceTree = "<group>"; };
+		5BF2C72EFB5DFAB716E5241C /* YIPhotoPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIPhotoPreviewViewController.h; sourceTree = "<group>"; };
+		5BF2C7600F38473194672A10 /* YIPasswordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIPasswordManager.m; sourceTree = "<group>"; };
+		5BF2C76483F27A24579D25A5 /* YIPhotoCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIPhotoCollectionViewLayout.m; sourceTree = "<group>"; };
 		5BF2C7669AE69A67B61416BE /* qr_code_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr_code_icon@2x.png"; sourceTree = "<group>"; };
-		5BF2C795AE2BD8209C276CFA /* YIIndexVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YIIndexVc.xib; sourceTree = "<group>"; };
-		5BF2C7B1F7539953E1548B2D /* YITransitionPreviewToPhotoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YITransitionPreviewToPhotoList.m; sourceTree = "<group>"; };
+		5BF2C7B9CA39C35924918D29 /* YIMosaicsVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YIMosaicsVc.xib; sourceTree = "<group>"; };
 		5BF2C7E71A50C089D07A4C10 /* my_share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my_share@2x.png"; sourceTree = "<group>"; };
-		5BF2C874846470ACAD2342DB /* YIPrivatePhotoVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YIPrivatePhotoVc.xib; sourceTree = "<group>"; };
-		5BF2C895CD5B4A7F22F0578B /* Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checkmark@2x.png"; sourceTree = "<group>"; };
+		5BF2C7F174A104FB610857D2 /* YIMosaicsVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMosaicsVc.h; sourceTree = "<group>"; };
+		5BF2C807008355418EF187AB /* BKPasscodeField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKPasscodeField.m; sourceTree = "<group>"; };
+		5BF2C8273FC03730F14B31EB /* YIPrivateSettingVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIPrivateSettingVc.h; sourceTree = "<group>"; };
+		5BF2C846585BD22E77C1DFBF /* YIMessagesModelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMessagesModelData.h; sourceTree = "<group>"; };
+		5BF2C867D1AE915F090E1593 /* UIAlertView+LBXAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+LBXAlertAction.m"; sourceTree = "<group>"; };
+		5BF2C8862D14D0BAEFD2B38E /* YIIndexVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIIndexVc.m; sourceTree = "<group>"; };
+		5BF2C8925CF12967DE838977 /* YITransitionPreviewToPhotoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YITransitionPreviewToPhotoList.h; sourceTree = "<group>"; };
 		5BF2C89614AB9A62D90D5531 /* icon_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_120.png; sourceTree = "<group>"; };
-		5BF2C8DC90CB895494605447 /* YITransitionPhotoListToPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YITransitionPhotoListToPreview.m; sourceTree = "<group>"; };
-		5BF2C924674D7F532F10C6FC /* zh-Hans */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/BKPasscodeView.strings"; sourceTree = "<group>"; };
-		5BF2C927CC7BDAA177A4D6F1 /* SubLBXScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubLBXScanViewController.h; sourceTree = "<group>"; };
-		5BF2C958F7923FFDF4370B73 /* YIPhotoCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIPhotoCollectionViewLayout.h; sourceTree = "<group>"; };
+		5BF2C89CE58DCC72FBA97F1B /* YICalculatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YICalculatorView.m; sourceTree = "<group>"; };
+		5BF2C8D29594DB75449D5EFC /* YIFlashlightVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIFlashlightVc.h; sourceTree = "<group>"; };
+		5BF2C8F65C909CD53FB8A3CC /* BKTouchIDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTouchIDManager.m; sourceTree = "<group>"; };
+		5BF2C90E937FEDF9ED69DEB6 /* YISettingVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YISettingVc.m; sourceTree = "<group>"; };
+		5BF2C91322F55DB17F366130 /* YIMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMessagesViewController.m; sourceTree = "<group>"; };
+		5BF2C93AE39C884E3A7D3480 /* YIPrivatePhotoVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YIPrivatePhotoVc.xib; sourceTree = "<group>"; };
 		5BF2C99452BADBABF0FDB4DF /* my_feedback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my_feedback@2x.png"; sourceTree = "<group>"; };
-		5BF2C9F17BF7152B26301054 /* YIScanVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIScanVc.h; sourceTree = "<group>"; };
-		5BF2CA0F2F6D4DE256CF4A13 /* YIPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIPhotoPreviewCell.h; sourceTree = "<group>"; };
-		5BF2CA1BEDDF4A90D67EB364 /* YIPrivateSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIPrivateSetting.h; sourceTree = "<group>"; };
-		5BF2CA458DADE2FBAEA52B72 /* TorchObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorchObject.h; sourceTree = "<group>"; };
-		5BF2CA654FE043E21EDC8B4D /* YIDonateVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIDonateVc.m; sourceTree = "<group>"; };
-		5BF2CA7D6850DC0F50CE42F3 /* YIMessagesModelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMessagesModelData.m; sourceTree = "<group>"; };
-		5BF2CAB11544CF5594A8A37C /* BKPasscodeDummyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKPasscodeDummyViewController.h; sourceTree = "<group>"; };
-		5BF2CAC5BD9A49D05F392223 /* BKPasscodeField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKPasscodeField.m; sourceTree = "<group>"; };
-		5BF2CAC9ED52FCB3409A6F01 /* YIMessagesModelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMessagesModelData.h; sourceTree = "<group>"; };
-		5BF2CB212790D7204DC6138B /* AFViewShaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFViewShaker.m; sourceTree = "<group>"; };
-		5BF2CB2277E33AF04EDAB37B /* YIPreviewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIPreviewLayout.h; sourceTree = "<group>"; };
-		5BF2CB2B230A44132C5634E8 /* UIActionSheet+LBXAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+LBXAlertAction.m"; sourceTree = "<group>"; };
-		5BF2CBA1DFFBB426DF49F092 /* UIActionSheet+LBXAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+LBXAlertAction.h"; sourceTree = "<group>"; };
-		5BF2CBAAC7F2CBDBA7ED906A /* YITransitionPreviewToPhotoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YITransitionPreviewToPhotoList.h; sourceTree = "<group>"; };
-		5BF2CBAC4E83DCECB41656F1 /* BKPasscodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKPasscodeViewController.m; sourceTree = "<group>"; };
+		5BF2C9C64A262BB356F3EB04 /* YIPhotoListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIPhotoListCell.h; sourceTree = "<group>"; };
+		5BF2CA35BE559868D52E1266 /* SubLBXScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubLBXScanViewController.m; sourceTree = "<group>"; };
+		5BF2CA3CFBC742864549F796 /* YICalculatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YICalculatorManager.m; sourceTree = "<group>"; };
+		5BF2CB092DC636633167ABAA /* YITransitionPhotoListToPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YITransitionPhotoListToPreview.m; sourceTree = "<group>"; };
+		5BF2CB235F14279662EAF3FD /* UIAlertView+LBXAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+LBXAlertAction.h"; sourceTree = "<group>"; };
+		5BF2CB25E720794AB952CA01 /* YIPrivateSettingVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIPrivateSettingVc.m; sourceTree = "<group>"; };
+		5BF2CB3C21C35ABC17247D9B /* CodeScan.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CodeScan.bundle; sourceTree = "<group>"; };
+		5BF2CB628C4AA8C088D122B5 /* YIIndexVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIIndexVc.h; sourceTree = "<group>"; };
+		5BF2CB6E8702E2C97100061E /* YISettingVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YISettingVc.h; sourceTree = "<group>"; };
+		5BF2CBA4F46668A4A72AFA26 /* YICalculatorVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YICalculatorVc.m; sourceTree = "<group>"; };
 		5BF2CBC74DCF6F49870DE08C /* my_tested@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my_tested@2x.png"; sourceTree = "<group>"; };
-		5BF2CBD44150F0DDF2B8DF53 /* YIPhotoListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIPhotoListCell.h; sourceTree = "<group>"; };
-		5BF2CC501B1D46B014C5C7E5 /* YIMosaicsVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YIMosaicsVc.xib; sourceTree = "<group>"; };
-		5BF2CC5A32ABE5B32A30C64B /* BKTouchIDSwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTouchIDSwitchView.m; sourceTree = "<group>"; };
-		5BF2CC6075655CE3A7190C33 /* BKPasscodeField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKPasscodeField.h; sourceTree = "<group>"; };
-		5BF2CC6436E18303A3447E33 /* BKPasscodeInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKPasscodeInputView.h; sourceTree = "<group>"; };
-		5BF2CC755F190BB06141F13B /* YIPhotoPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIPhotoPreviewCell.m; sourceTree = "<group>"; };
-		5BF2CC7B525B61B5675639F9 /* MyQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyQRViewController.m; sourceTree = "<group>"; };
-		5BF2CCE7B6CB758321C76E37 /* ScanResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanResultViewController.m; sourceTree = "<group>"; };
-		5BF2CCE811C0DF3AD5E44EEB /* YIBlurVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIBlurVc.m; sourceTree = "<group>"; };
-		5BF2CD20FFB8D4E7CBDA2F37 /* ScanResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanResultViewController.xib; sourceTree = "<group>"; };
-		5BF2CD2D397C42191C54E75B /* YINineGridVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YINineGridVc.h; sourceTree = "<group>"; };
-		5BF2CD2F2179EB194FCE7C7D /* UIAlertView+LBXAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+LBXAlertAction.h"; sourceTree = "<group>"; };
-		5BF2CD3A6FFC9F374E8E8EFF /* YIMosaicsVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMosaicsVc.m; sourceTree = "<group>"; };
-		5BF2CD46CD92FDB9E4BCF90C /* YIScanVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIScanVc.m; sourceTree = "<group>"; };
-		5BF2CD60811AF79DE1273D32 /* BKPasscodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKPasscodeViewController.h; sourceTree = "<group>"; };
-		5BF2CD834128B0AAE005159C /* YIPrivateSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIPrivateSetting.m; sourceTree = "<group>"; };
-		5BF2CDD94CF1DF7B91B0D4FE /* BKTouchIDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTouchIDManager.m; sourceTree = "<group>"; };
+		5BF2CC0142F28EAFF89E10D4 /* YIIndexVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YIIndexVc.xib; sourceTree = "<group>"; };
+		5BF2CC1DB248B482063342B6 /* YIBlurVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIBlurVc.m; sourceTree = "<group>"; };
+		5BF2CC24B36B136FD520892A /* YIDonateVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIDonateVc.h; sourceTree = "<group>"; };
+		5BF2CC29B25EE36668400D12 /* YIPrivateSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIPrivateSetting.h; sourceTree = "<group>"; };
+		5BF2CC6ECA0EE471D9C9CA17 /* YIBlurVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIBlurVc.h; sourceTree = "<group>"; };
+		5BF2CCB77119D49FB445B76B /* YIPrivateSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIPrivateSetting.m; sourceTree = "<group>"; };
+		5BF2CD219CE6DE9F31F5A2F1 /* YICalculatorVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YICalculatorVc.h; sourceTree = "<group>"; };
+		5BF2CD39AE26CD46E8228983 /* YIMosaicsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMosaicsView.h; sourceTree = "<group>"; };
+		5BF2CD3EF1E40C2E6B2727A9 /* YIPreviewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIPreviewLayout.m; sourceTree = "<group>"; };
+		5BF2CD57A6FDCDAD286389DF /* Base */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/BKPasscodeView.strings; sourceTree = "<group>"; };
+		5BF2CD71F797598BF3B74BCE /* ScanResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanResultViewController.m; sourceTree = "<group>"; };
+		5BF2CD79F68987380C92E0C6 /* BKPasscodeLockScreenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKPasscodeLockScreenManager.h; sourceTree = "<group>"; };
+		5BF2CDC0837B686B9922D430 /* YINineGridVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YINineGridVc.m; sourceTree = "<group>"; };
+		5BF2CDC51AF6CE586AC6AAEF /* YINineGridVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YINineGridVc.h; sourceTree = "<group>"; };
+		5BF2CDEF743F7222C50DCE10 /* YIDonateVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YIDonateVc.xib; sourceTree = "<group>"; };
 		5BF2CE30805162FA6E9E24D7 /* gaosimohu_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gaosimohu_icon@2x.png"; sourceTree = "<group>"; };
-		5BF2CE3FCC18FC1E12F8F0D2 /* BKPasscodeLockScreenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKPasscodeLockScreenManager.h; sourceTree = "<group>"; };
-		5BF2CE5C9E227BAEA1829CB4 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BKPasscodeView.strings; sourceTree = "<group>"; };
-		5BF2CE747C78DA0F17D7379F /* AFViewShaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFViewShaker.h; sourceTree = "<group>"; };
-		5BF2CE92F2CAE6B5795F739C /* LBXAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXAlertAction.m; sourceTree = "<group>"; };
-		5BF2CF1D33B5915FD971E1F9 /* BKTouchIDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTouchIDManager.h; sourceTree = "<group>"; };
-		5BF2CF6F15F54DDAC1B677CB /* YIBlurVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIBlurVc.h; sourceTree = "<group>"; };
-		5BF2CF78E281DD278242265C /* YITransitionPhotoListToPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YITransitionPhotoListToPreview.h; sourceTree = "<group>"; };
-		5BF2CFB4FE406A8BFFE67997 /* YIIndexVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIIndexVc.m; sourceTree = "<group>"; };
-		5BF2CFF75F545ACC404B9DDD /* YIMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMessagesViewController.m; sourceTree = "<group>"; };
+		5BF2CE417A125B1BC816DDCB /* BKTouchIDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTouchIDManager.h; sourceTree = "<group>"; };
+		5BF2CE4E4A613C01F402BF9D /* AFViewShaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFViewShaker.m; sourceTree = "<group>"; };
+		5BF2CE67A9FC86BFDA635175 /* BKPasscodeDummyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKPasscodeDummyViewController.h; sourceTree = "<group>"; };
+		5BF2CE7C21C88444183545C6 /* YICalculatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YICalculatorManager.h; sourceTree = "<group>"; };
+		5BF2CE7F55CB0123BA752664 /* YINineGridVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YINineGridVc.xib; sourceTree = "<group>"; };
+		5BF2CE84418C85E7865150F1 /* YIMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMessagesViewController.h; sourceTree = "<group>"; };
+		5BF2CE965BAEDD8E35B7F427 /* flashlight64@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight64@2x.png"; sourceTree = "<group>"; };
+		5BF2CEAEF1AC9017C5C92AD3 /* YIBlurVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YIBlurVc.xib; sourceTree = "<group>"; };
+		5BF2CEF68729D92CA0C1A3A9 /* UIActionSheet+LBXAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+LBXAlertAction.h"; sourceTree = "<group>"; };
+		5BF2CF46BF382AABEC49D5C4 /* NSUserDefaults+DemoSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+DemoSettings.m"; sourceTree = "<group>"; };
+		5BF2CF4DD9AE8B8E6FA2ACB5 /* UIActionSheet+LBXAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+LBXAlertAction.m"; sourceTree = "<group>"; };
+		5BF2CF6F5542A698E50F0456 /* YIPhotoPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIPhotoPreviewViewController.m; sourceTree = "<group>"; };
+		5BF2CFCC0C2E8AAD379B6B77 /* BKPasscodeField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKPasscodeField.h; sourceTree = "<group>"; };
+		5BF2CFE87368C77BFC6A3BA6 /* YIPreviewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIPreviewLayout.h; sourceTree = "<group>"; };
+		5BF2CFF8B6C09EB0DA41CB4C /* YIFlashlightVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YIFlashlightVc.xib; sourceTree = "<group>"; };
 		A882D01B044351C351DEBD7B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -505,6 +535,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		522F94D11D36770200494E02 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				522F94CF1D3676EE00494E02 /* index.plist */,
+				5BF2CB628C4AA8C088D122B5 /* YIIndexVc.h */,
+				5BF2C8862D14D0BAEFD2B38E /* YIIndexVc.m */,
+				5BF2CC0142F28EAFF89E10D4 /* YIIndexVc.xib */,
+			);
+			name = "首页";
+			sourceTree = "<group>";
+		};
 		52854B8D1C61F56200AC8761 /* PEPhotoCropEditor */ = {
 			isa = PBXGroup;
 			children = (
@@ -548,6 +589,7 @@
 		528620D31C5CF944002A5FEC /* YIBox */ = {
 			isa = PBXGroup;
 			children = (
+				5BF2C15DA6BC597B42C97EE0 /* ViewController */,
 				528621101C5E0235002A5FEC /* YIAppDelegate.h */,
 				528621111C5E0235002A5FEC /* YIAppDelegate.m */,
 				528621151C5E0449002A5FEC /* YIGlobalData.h */,
@@ -562,7 +604,6 @@
 				528621181C5E04CD002A5FEC /* Util */,
 				528620D41C5CF944002A5FEC /* Supporting Files */,
 				5BF2CFC14349B3878386B21C /* Images */,
-				5BF2C6DCDC1F83FB3590356C /* ViewController */,
 				528620E01C5CF944002A5FEC /* Assets.xcassets */,
 				522AD56F1C8C374800C851CD /* Launch.xib */,
 				528620E21C5CF944002A5FEC /* LaunchScreen.storyboard */,
@@ -766,193 +807,226 @@
 			path = SDKExport;
 			sourceTree = "<group>";
 		};
-		5BF2C05645B346BD5BA4485F /* 手电筒 */ = {
+		5BF2C089FD994DF9DA97DD34 /* 二维码 */ = {
 			isa = PBXGroup;
 			children = (
-				5BF2C496F68A81666A4E325D /* flashlight64@2x.png */,
-				5BF2CA458DADE2FBAEA52B72 /* TorchObject.h */,
-				5BF2C1176F9B37D9A2B072F9 /* TorchObject.m */,
-				5BF2C21FB93DE4FE26D86057 /* YIFlashlightVc.h */,
-				5BF2C3B8236BA665309D1E46 /* YIFlashlightVc.m */,
-				5BF2C2F33B72ADF8D3126863 /* YIFlashlightVc.xib */,
-				5BF2C161438148EA312A6CA3 /* YIFlashlight.h */,
-				5BF2C69B4859B7FAE884AFDB /* YIFlashlight.m */,
-			);
-			name = "手电筒";
-			sourceTree = "<group>";
-		};
-		5BF2C05BB1462B6C4A7908D0 /* 竖式计算器 */ = {
-			isa = PBXGroup;
-			children = (
-				524F59B81C95B84C00CF7421 /* YICalculatorManager.h */,
-				524F59B91C95B84C00CF7421 /* YICalculatorManager.m */,
-				524F59BC1C95B84C00CF7421 /* YICalculatorVc.h */,
-				524F59BA1C95B84C00CF7421 /* YICalculatorVc.m */,
-				524F59BD1C95B84C00CF7421 /* YICalculatorView.h */,
-				524F59BB1C95B84C00CF7421 /* YICalculatorView.m */,
-			);
-			name = "竖式计算器";
-			sourceTree = "<group>";
-		};
-		5BF2C27BE5CCB5AA5E7F31FB /* AFViewShaker */ = {
-			isa = PBXGroup;
-			children = (
-				5BF2CE747C78DA0F17D7379F /* AFViewShaker.h */,
-				5BF2CB212790D7204DC6138B /* AFViewShaker.m */,
-			);
-			path = AFViewShaker;
-			sourceTree = "<group>";
-		};
-		5BF2C6357B64153B5AF06730 /* 捐赠 */ = {
-			isa = PBXGroup;
-			children = (
-				5BF2C440824FA41AAB4833F8 /* YIDonateVc.h */,
-				5BF2CA654FE043E21EDC8B4D /* YIDonateVc.m */,
-				5BF2C335A6111E9CE3B81D5C /* YIDonateVc.xib */,
-			);
-			name = "捐赠";
-			sourceTree = "<group>";
-		};
-		5BF2C6DCDC1F83FB3590356C /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				5BF2C297A0BEEB4DF8CAE675 /* YIIndexVc.h */,
-				5BF2CFB4FE406A8BFFE67997 /* YIIndexVc.m */,
-				5BF2C795AE2BD8209C276CFA /* YIIndexVc.xib */,
-				5BF2C912DDBD0BE60BB21E3C /* 私密照片 */,
-				5BF2CFF54B8A9D3CA6F45CEE /* 马赛克 */,
-				5BF2C6357B64153B5AF06730 /* 捐赠 */,
-				5BF2C05645B346BD5BA4485F /* 手电筒 */,
-				5BF2C9D23C22A0F44434DEB1 /* 九宫格 */,
-				5BF2CD05AF6811CEA2CF0F5A /* 高斯模糊 */,
-				5BF2CEE2D0CA62F140169013 /* 反馈 */,
-				5BF2CBBC26D372371AB18D60 /* 二维码 */,
-				5BF2C05BB1462B6C4A7908D0 /* 竖式计算器 */,
-			);
-			name = ViewController;
-			sourceTree = "<group>";
-		};
-		5BF2C912DDBD0BE60BB21E3C /* 私密照片 */ = {
-			isa = PBXGroup;
-			children = (
-				5BF2C05128C200B5C09B84CB /* CheckmarkUnselected@2x.png */,
-				5BF2C895CD5B4A7F22F0578B /* Checkmark@2x.png */,
-				5BF2C27BE5CCB5AA5E7F31FB /* AFViewShaker */,
-				5BF2CD190F49A2346E5C6845 /* BKPasscodeView */,
-				5BF2CBD44150F0DDF2B8DF53 /* YIPhotoListCell.h */,
-				5BF2C2402C826548AAB92C71 /* YIPhotoListCell.m */,
-				5BF2C38AEB8A5ABD57E2DF70 /* placeholder_dropbox@2x.png */,
-				5BF2C4F28FB2121C058CF410 /* YIPrivatePhotoVc.h */,
-				5BF2C2BF6F9FAB99CD1AE745 /* YIPrivatePhotoVc.m */,
-				5BF2C874846470ACAD2342DB /* YIPrivatePhotoVc.xib */,
-				5BF2C4578F0B16BC11AAE3A0 /* YIPrivateSettingVc.h */,
-				5BF2C62FFF1E90376C6CDCE9 /* YIPrivateSettingVc.m */,
-				5BF2C224EC4EED0F618B90B9 /* YIPrivateSettingVc.xib */,
-				5BF2CA1BEDDF4A90D67EB364 /* YIPrivateSetting.h */,
-				5BF2CD834128B0AAE005159C /* YIPrivateSetting.m */,
-				5BF2C958F7923FFDF4370B73 /* YIPhotoCollectionViewLayout.h */,
-				5BF2C4FBEC50CB9D80460216 /* YIPhotoCollectionViewLayout.m */,
-				5BF2C1DD46E9029C36A76F00 /* YIPasswordManager.h */,
-				5BF2C64B778FB33F67A3516E /* YIPasswordManager.m */,
-				5BF2C59D2C3FA283552B87C2 /* YIPhotoPreviewViewController.h */,
-				5BF2C4C204FFD3DD162454FA /* YIPhotoPreviewViewController.m */,
-				5BF2CA0F2F6D4DE256CF4A13 /* YIPhotoPreviewCell.h */,
-				5BF2CC755F190BB06141F13B /* YIPhotoPreviewCell.m */,
-				5BF2CB2277E33AF04EDAB37B /* YIPreviewLayout.h */,
-				5BF2C3F3E2131D28BDEBA832 /* YIPreviewLayout.m */,
-				5BF2CF78E281DD278242265C /* YITransitionPhotoListToPreview.h */,
-				5BF2C8DC90CB895494605447 /* YITransitionPhotoListToPreview.m */,
-				5BF2CBAAC7F2CBDBA7ED906A /* YITransitionPreviewToPhotoList.h */,
-				5BF2C7B1F7539953E1548B2D /* YITransitionPreviewToPhotoList.m */,
-			);
-			name = "私密照片";
-			sourceTree = "<group>";
-		};
-		5BF2C9D23C22A0F44434DEB1 /* 九宫格 */ = {
-			isa = PBXGroup;
-			children = (
-				5BF2CD2D397C42191C54E75B /* YINineGridVc.h */,
-				5BF2C1AA1D4DF1F7A38CAE80 /* YINineGridVc.m */,
-				5BF2C1B16020D5AB58A4D868 /* YINineGridVc.xib */,
-			);
-			name = "九宫格";
-			sourceTree = "<group>";
-		};
-		5BF2CBBC26D372371AB18D60 /* 二维码 */ = {
-			isa = PBXGroup;
-			children = (
-				5BF2C395B44AFED158E2079D /* CodeScan.bundle */,
-				5BF2CD46CD92FDB9E4BCF90C /* YIScanVc.m */,
-				5BF2C9F17BF7152B26301054 /* YIScanVc.h */,
-				5BF2C927CC7BDAA177A4D6F1 /* SubLBXScanViewController.h */,
-				5BF2C3D1F979B3108D1D23C6 /* SubLBXScanViewController.m */,
-				5BF2C631A48FF03B99DD0D00 /* LBXAlertAction.h */,
-				5BF2CE92F2CAE6B5795F739C /* LBXAlertAction.m */,
-				5BF2CBA1DFFBB426DF49F092 /* UIActionSheet+LBXAlertAction.h */,
-				5BF2CB2B230A44132C5634E8 /* UIActionSheet+LBXAlertAction.m */,
-				5BF2CD2F2179EB194FCE7C7D /* UIAlertView+LBXAlertAction.h */,
-				5BF2C506D037D6CB74196742 /* UIAlertView+LBXAlertAction.m */,
-				5BF2C64ECCA48E879B34DC28 /* MyQRViewController.h */,
-				5BF2CD20FFB8D4E7CBDA2F37 /* ScanResultViewController.xib */,
-				5BF2C447BA6419C74569C997 /* ScanResultViewController.h */,
-				5BF2CCE7B6CB758321C76E37 /* ScanResultViewController.m */,
-				5BF2CC7B525B61B5675639F9 /* MyQRViewController.m */,
+				5BF2CB3C21C35ABC17247D9B /* CodeScan.bundle */,
+				5BF2C027736EC7FC249CCEF5 /* YIScanVc.h */,
+				5BF2C4DDCA6BF876C59EFEBC /* YIScanVc.m */,
+				5BF2C4EA0607A65B6CCA2A1A /* SubLBXScanViewController.h */,
+				5BF2CA35BE559868D52E1266 /* SubLBXScanViewController.m */,
+				5BF2C18D1535F211DE9B9E58 /* LBXAlertAction.h */,
+				5BF2C47624AA63716158510D /* LBXAlertAction.m */,
+				5BF2CEF68729D92CA0C1A3A9 /* UIActionSheet+LBXAlertAction.h */,
+				5BF2CF4DD9AE8B8E6FA2ACB5 /* UIActionSheet+LBXAlertAction.m */,
+				5BF2CB235F14279662EAF3FD /* UIAlertView+LBXAlertAction.h */,
+				5BF2C867D1AE915F090E1593 /* UIAlertView+LBXAlertAction.m */,
+				5BF2C55F5A2DC64A31968649 /* MyQRViewController.h */,
+				5BF2C282608150FCECE4F0BD /* MyQRViewController.m */,
+				5BF2C1A4B5A5FD28DB259AF4 /* ScanResultViewController.xib */,
+				5BF2C0BAF55B9C218CF2C5C9 /* ScanResultViewController.h */,
+				5BF2CD71F797598BF3B74BCE /* ScanResultViewController.m */,
 			);
 			name = "二维码";
 			sourceTree = "<group>";
 		};
-		5BF2CD05AF6811CEA2CF0F5A /* 高斯模糊 */ = {
+		5BF2C15DA6BC597B42C97EE0 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				5BF2C1D0B362A35C1360F299 /* image_default@2x.jpg */,
-				5BF2CF6F15F54DDAC1B677CB /* YIBlurVc.h */,
-				5BF2CCE811C0DF3AD5E44EEB /* YIBlurVc.m */,
-				5BF2C002DD6085B87367AF23 /* YIBlurVc.xib */,
+				528A87FA1D37E17800CDE3D1 /* YIBaseToolVc.h */,
+				528A87FB1D37E17800CDE3D1 /* YIBaseToolVc.m */,
+				522F94D11D36770200494E02 /* 首页 */,
+				5BF2C9A5232A2617F5466410 /* 私密照片 */,
+				5BF2C43883BFA20746609CFE /* 马赛克 */,
+				5BF2CD098C6696DF918BFDFE /* 捐赠 */,
+				5BF2C42BAC5390FEBC40203C /* 手电筒 */,
+				5BF2CD67B519D1F17004F56F /* 九宫格 */,
+				5BF2CEC9FBC5AEB9CBA64BC9 /* 高斯模糊 */,
+				5BF2CD3B3822617297516FBE /* 反馈 */,
+				5BF2C089FD994DF9DA97DD34 /* 二维码 */,
+				5BF2C709ED2B9AE6E5B09AC8 /* 竖式计算器 */,
+				5BF2C51DFF433B11460760E9 /* 设置 */,
 			);
-			name = "高斯模糊";
+			name = ViewController;
 			sourceTree = "<group>";
 		};
-		5BF2CD190F49A2346E5C6845 /* BKPasscodeView */ = {
+		5BF2C42BAC5390FEBC40203C /* 手电筒 */ = {
 			isa = PBXGroup;
 			children = (
-				5BF2C1646CAAE9489CEB1AE5 /* BKPasscodeView.strings */,
-				5BF2CAB11544CF5594A8A37C /* BKPasscodeDummyViewController.h */,
-				5BF2C71DB66CF62A36363BC3 /* BKPasscodeDummyViewController.m */,
-				5BF2CC6075655CE3A7190C33 /* BKPasscodeField.h */,
-				5BF2CAC5BD9A49D05F392223 /* BKPasscodeField.m */,
-				5BF2CC6436E18303A3447E33 /* BKPasscodeInputView.h */,
-				5BF2C0F915FACEE40C54BC63 /* BKPasscodeInputView.m */,
-				5BF2CE3FCC18FC1E12F8F0D2 /* BKPasscodeLockScreenManager.h */,
-				5BF2C2F0C7D74714881791D0 /* BKPasscodeLockScreenManager.m */,
-				5BF2C22B130339055C8DC06C /* BKPasscodeUtils.h */,
-				5BF2CD60811AF79DE1273D32 /* BKPasscodeViewController.h */,
-				5BF2CBAC4E83DCECB41656F1 /* BKPasscodeViewController.m */,
-				5BF2C01B6A4F9127A4CE33E4 /* BKShiftingView.h */,
-				5BF2C05EB686EFB3FF437E6F /* BKShiftingView.m */,
-				5BF2CF1D33B5915FD971E1F9 /* BKTouchIDManager.h */,
-				5BF2CDD94CF1DF7B91B0D4FE /* BKTouchIDManager.m */,
-				5BF2C1AF18ED6555E7EBC7C2 /* BKTouchIDSwitchView.h */,
-				5BF2CC5A32ABE5B32A30C64B /* BKTouchIDSwitchView.m */,
+				5BF2CE965BAEDD8E35B7F427 /* flashlight64@2x.png */,
+				5BF2C2DA0CB34322414F9A09 /* TorchObject.h */,
+				5BF2C17FC11FD661C1BC7931 /* TorchObject.m */,
+				5BF2C8D29594DB75449D5EFC /* YIFlashlightVc.h */,
+				5BF2C0D3A41490754AA795D1 /* YIFlashlightVc.m */,
+				5BF2CFF8B6C09EB0DA41CB4C /* YIFlashlightVc.xib */,
+				5BF2C5FC8872D0309FA198EA /* YIFlashlight.h */,
+				5BF2C72ABFA79E8533C063F3 /* YIFlashlight.m */,
+			);
+			name = "手电筒";
+			sourceTree = "<group>";
+		};
+		5BF2C43883BFA20746609CFE /* 马赛克 */ = {
+			isa = PBXGroup;
+			children = (
+				52EC9A531D3B84DE005B8E7E /* 5.pic.jpg */,
+				52EC9A4D1D3B7820005B8E7E /* EditView.h */,
+				52EC9A4E1D3B7820005B8E7E /* EditView.m */,
+				52EC9A4F1D3B7820005B8E7E /* EditImageManager.h */,
+				52EC9A501D3B7820005B8E7E /* EditImageManager.m */,
+				5BF2C7F174A104FB610857D2 /* YIMosaicsVc.h */,
+				5BF2C362226EA6CDD9636841 /* YIMosaicsVc.m */,
+				5BF2C7B9CA39C35924918D29 /* YIMosaicsVc.xib */,
+				5BF2CD39AE26CD46E8228983 /* YIMosaicsView.h */,
+				5BF2C4C00CF1AD78CCAEB680 /* YIMosaicsView.m */,
+			);
+			name = "马赛克";
+			sourceTree = "<group>";
+		};
+		5BF2C4E72887828583CA9136 /* BKPasscodeView */ = {
+			isa = PBXGroup;
+			children = (
+				5BF2CE9D4010C9B8C659F5B4 /* BKPasscodeView.strings */,
+				5BF2CE67A9FC86BFDA635175 /* BKPasscodeDummyViewController.h */,
+				5BF2C12397D13A186DE86AE9 /* BKPasscodeDummyViewController.m */,
+				5BF2CFCC0C2E8AAD379B6B77 /* BKPasscodeField.h */,
+				5BF2C807008355418EF187AB /* BKPasscodeField.m */,
+				5BF2C51F009AFC741608DC27 /* BKPasscodeInputView.h */,
+				5BF2C708152D5797E46F836A /* BKPasscodeInputView.m */,
+				5BF2CD79F68987380C92E0C6 /* BKPasscodeLockScreenManager.h */,
+				5BF2C531922610C2D7A1C251 /* BKPasscodeLockScreenManager.m */,
+				5BF2C34D0DC572B5EA2E63D8 /* BKPasscodeUtils.h */,
+				5BF2C60208E2006F349EE601 /* BKPasscodeViewController.h */,
+				5BF2C51895B306AD736BA05B /* BKPasscodeViewController.m */,
+				5BF2C3AD5AEC9F0D8EE522B4 /* BKShiftingView.h */,
+				5BF2C6CE2A3F0C27FEAB4076 /* BKShiftingView.m */,
+				5BF2CE417A125B1BC816DDCB /* BKTouchIDManager.h */,
+				5BF2C8F65C909CD53FB8A3CC /* BKTouchIDManager.m */,
+				5BF2C52F078CD43E838F0769 /* BKTouchIDSwitchView.h */,
+				5BF2C1580F2759AA8242F95D /* BKTouchIDSwitchView.m */,
 			);
 			path = BKPasscodeView;
 			sourceTree = "<group>";
 		};
-		5BF2CEE2D0CA62F140169013 /* 反馈 */ = {
+		5BF2C51DFF433B11460760E9 /* 设置 */ = {
 			isa = PBXGroup;
 			children = (
-				5BF2C76100CEDF3984D78E4A /* NSUserDefaults+DemoSettings.h */,
-				5BF2C2A78DB0B7CE987ED1D7 /* NSUserDefaults+DemoSettings.m */,
-				5BF2C4E60E7E1677A3DCBDA0 /* YIMessagesViewController.h */,
-				5BF2CFF75F545ACC404B9DDD /* YIMessagesViewController.m */,
-				5BF2CAC9ED52FCB3409A6F01 /* YIMessagesModelData.h */,
-				5BF2CA7D6850DC0F50CE42F3 /* YIMessagesModelData.m */,
+				5BF2C90E937FEDF9ED69DEB6 /* YISettingVc.m */,
+				5BF2CB6E8702E2C97100061E /* YISettingVc.h */,
+				522F94D21D367BE800494E02 /* setting.plist */,
+				528A87F31D37CF9300CDE3D1 /* default-tool.plist */,
+				528A87F71D37D21500CDE3D1 /* YIToolPickerVc.h */,
+				528A87F81D37D21500CDE3D1 /* YIToolPickerVc.m */,
+			);
+			name = "设置";
+			sourceTree = "<group>";
+		};
+		5BF2C709ED2B9AE6E5B09AC8 /* 竖式计算器 */ = {
+			isa = PBXGroup;
+			children = (
+				5BF2CE7C21C88444183545C6 /* YICalculatorManager.h */,
+				5BF2CA3CFBC742864549F796 /* YICalculatorManager.m */,
+				5BF2CD219CE6DE9F31F5A2F1 /* YICalculatorVc.h */,
+				5BF2CBA4F46668A4A72AFA26 /* YICalculatorVc.m */,
+				5BF2C45C5D2359735104DDF2 /* YICalculatorView.h */,
+				5BF2C89CE58DCC72FBA97F1B /* YICalculatorView.m */,
+			);
+			name = "竖式计算器";
+			sourceTree = "<group>";
+		};
+		5BF2C982B6870D3A349152AE /* AFViewShaker */ = {
+			isa = PBXGroup;
+			children = (
+				5BF2C3EDE63F18A54BB9D610 /* AFViewShaker.h */,
+				5BF2CE4E4A613C01F402BF9D /* AFViewShaker.m */,
+			);
+			path = AFViewShaker;
+			sourceTree = "<group>";
+		};
+		5BF2C9A5232A2617F5466410 /* 私密照片 */ = {
+			isa = PBXGroup;
+			children = (
+				5BF2C62C3E67E0024C4E377B /* CheckmarkUnselected@2x.png */,
+				5BF2C56DAB5E6C94D13ADE56 /* Checkmark@2x.png */,
+				5BF2C982B6870D3A349152AE /* AFViewShaker */,
+				5BF2C4E72887828583CA9136 /* BKPasscodeView */,
+				5BF2C9C64A262BB356F3EB04 /* YIPhotoListCell.h */,
+				5BF2C72CBF5976994C1EF541 /* YIPhotoListCell.m */,
+				5BF2C2055DDEFBB11E93FA8D /* placeholder_dropbox@2x.png */,
+				5BF2C51615B59E96199E4893 /* YIPrivatePhotoVc.h */,
+				5BF2C17F2DE39034B25251DC /* YIPrivatePhotoVc.m */,
+				5BF2C93AE39C884E3A7D3480 /* YIPrivatePhotoVc.xib */,
+				5BF2C8273FC03730F14B31EB /* YIPrivateSettingVc.h */,
+				5BF2CB25E720794AB952CA01 /* YIPrivateSettingVc.m */,
+				5BF2C48B54A6E60147A5D1D7 /* YIPrivateSettingVc.xib */,
+				5BF2CC29B25EE36668400D12 /* YIPrivateSetting.h */,
+				5BF2CCB77119D49FB445B76B /* YIPrivateSetting.m */,
+				5BF2C171349BE29FED58840A /* YIPhotoCollectionViewLayout.h */,
+				5BF2C76483F27A24579D25A5 /* YIPhotoCollectionViewLayout.m */,
+				5BF2C5A543977F4E92FFEC41 /* YIPasswordManager.h */,
+				5BF2C7600F38473194672A10 /* YIPasswordManager.m */,
+				5BF2C72EFB5DFAB716E5241C /* YIPhotoPreviewViewController.h */,
+				5BF2CF6F5542A698E50F0456 /* YIPhotoPreviewViewController.m */,
+				5BF2C2AF94CD43E8B9A3D18B /* YIPhotoPreviewCell.h */,
+				5BF2C08AF78758672BE19BB3 /* YIPhotoPreviewCell.m */,
+				5BF2CFE87368C77BFC6A3BA6 /* YIPreviewLayout.h */,
+				5BF2CD3EF1E40C2E6B2727A9 /* YIPreviewLayout.m */,
+				5BF2C6783155789C32DF83CE /* YITransitionPhotoListToPreview.h */,
+				5BF2CB092DC636633167ABAA /* YITransitionPhotoListToPreview.m */,
+				5BF2C8925CF12967DE838977 /* YITransitionPreviewToPhotoList.h */,
+				5BF2C360DE72AAC22F1069AC /* YITransitionPreviewToPhotoList.m */,
+			);
+			name = "私密照片";
+			sourceTree = "<group>";
+		};
+		5BF2CD098C6696DF918BFDFE /* 捐赠 */ = {
+			isa = PBXGroup;
+			children = (
+				5BF2CC24B36B136FD520892A /* YIDonateVc.h */,
+				5BF2C26E697EE3BADAAA457D /* YIDonateVc.m */,
+				5BF2CDEF743F7222C50DCE10 /* YIDonateVc.xib */,
+			);
+			name = "捐赠";
+			sourceTree = "<group>";
+		};
+		5BF2CD3B3822617297516FBE /* 反馈 */ = {
+			isa = PBXGroup;
+			children = (
+				5BF2C57E5BB8F8381A84DE0A /* NSUserDefaults+DemoSettings.h */,
+				5BF2CF46BF382AABEC49D5C4 /* NSUserDefaults+DemoSettings.m */,
+				5BF2CE84418C85E7865150F1 /* YIMessagesViewController.h */,
+				5BF2C91322F55DB17F366130 /* YIMessagesViewController.m */,
+				5BF2C846585BD22E77C1DFBF /* YIMessagesModelData.h */,
+				5BF2C65BE709CE694D599979 /* YIMessagesModelData.m */,
 			);
 			name = "反馈";
+			sourceTree = "<group>";
+		};
+		5BF2CD67B519D1F17004F56F /* 九宫格 */ = {
+			isa = PBXGroup;
+			children = (
+				5BF2CDC51AF6CE586AC6AAEF /* YINineGridVc.h */,
+				5BF2CDC0837B686B9922D430 /* YINineGridVc.m */,
+				5BF2CE7F55CB0123BA752664 /* YINineGridVc.xib */,
+			);
+			name = "九宫格";
+			sourceTree = "<group>";
+		};
+		5BF2CEC9FBC5AEB9CBA64BC9 /* 高斯模糊 */ = {
+			isa = PBXGroup;
+			children = (
+				5BF2C6593026822C6E4CD204 /* image_default@2x.jpg */,
+				5BF2CC6ECA0EE471D9C9CA17 /* YIBlurVc.h */,
+				5BF2CC1DB248B482063342B6 /* YIBlurVc.m */,
+				5BF2CEAEF1AC9017C5C92AD3 /* YIBlurVc.xib */,
+			);
+			name = "高斯模糊";
 			sourceTree = "<group>";
 		};
 		5BF2CFC14349B3878386B21C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				52BB773B1D3E82190012D1FA /* mosaic@2x.png */,
+				528A87F51D37D15D00CDE3D1 /* home@2x.png */,
 				5204EB9C1CA13D040043E5E5 /* calculator_icon@2x.png */,
 				52D91FC11C8D116800FB131C /* launch_bg2@2x.png */,
 				522AD5711C8C417800C851CD /* launch_logo@2x.png */,
@@ -980,16 +1054,6 @@
 				5BF2C7669AE69A67B61416BE /* qr_code_icon@2x.png */,
 			);
 			name = Images;
-			sourceTree = "<group>";
-		};
-		5BF2CFF54B8A9D3CA6F45CEE /* 马赛克 */ = {
-			isa = PBXGroup;
-			children = (
-				5BF2C2BD5B2EB6D4EE8538BF /* YIMosaicsVc.h */,
-				5BF2CD3A6FFC9F374E8E8EFF /* YIMosaicsVc.m */,
-				5BF2CC501B1D46B014C5C7E5 /* YIMosaicsVc.xib */,
-			);
-			name = "马赛克";
 			sourceTree = "<group>";
 		};
 		96A2415A5C98C1CFF9316332 /* Frameworks */ = {
@@ -1132,6 +1196,7 @@
 				522AD5721C8C417800C851CD /* launch_logo@2x.png in Resources */,
 				52D91FC21C8D116800FB131C /* launch_bg2@2x.png in Resources */,
 				522AD5701C8C374800C851CD /* Launch.xib in Resources */,
+				522F94D01D3676EE00494E02 /* index.plist in Resources */,
 				52B5BBEA1C7C3A4F0028049E /* read_me.txt in Resources */,
 				528F81131C85CB08001600AD /* private_photos@2x.png in Resources */,
 				52854B9E1C61F64700AC8761 /* PEPhotoCropEditor.bundle in Resources */,
@@ -1141,7 +1206,10 @@
 				528620E11C5CF944002A5FEC /* Assets.xcassets in Resources */,
 				523952091C7B526B00C80E09 /* success@2x.png in Resources */,
 				5BF2C012BBB88D4B4835261F /* my_collection@2x.png in Resources */,
+				528A87F61D37D15D00CDE3D1 /* home@2x.png in Resources */,
+				528A87F41D37CF9300CDE3D1 /* default-tool.plist in Resources */,
 				5BF2C87637A7C71B4469747B /* my_feedback@2x.png in Resources */,
+				52BB773C1D3E82190012D1FA /* mosaic@2x.png in Resources */,
 				5239520F1C7B5F4800C80E09 /* icon_100@2x.png in Resources */,
 				5BF2C1FDC6E47D6A4C98142D /* my_setting@2x.png in Resources */,
 				5BF2CA96DD755E2BD301EFCC /* my_share@2x.png in Resources */,
@@ -1158,23 +1226,25 @@
 				5BF2CC036B9027C4FE9B3BDE /* ninegrid_icon@2x.png in Resources */,
 				52DFD86F1C897AFC002EB8E7 /* iconfont-select@2x.png in Resources */,
 				5BF2C41A8117348839DD6F07 /* qr_code_icon@2x.png in Resources */,
+				522F94D31D367BE800494E02 /* setting.plist in Resources */,
 				52DFD8601C896F0B002EB8E7 /* feedback@2x.png in Resources */,
-				5BF2C55FD75D73750D2A881A /* YIIndexVc.xib in Resources */,
-				5BF2C73A33EA94AEFE7F0B27 /* CheckmarkUnselected@2x.png in Resources */,
-				5BF2CDC1139F31928FB4EA64 /* Checkmark@2x.png in Resources */,
-				5BF2C8B2B002D1D943691555 /* BKPasscodeView.strings in Resources */,
-				5BF2CFEF780927DC9DF9BB5B /* placeholder_dropbox@2x.png in Resources */,
-				5BF2CE42C272265CF5676499 /* YIPrivatePhotoVc.xib in Resources */,
-				5BF2CB2F1D53CC9D0D2C785B /* YIPrivateSettingVc.xib in Resources */,
-				5BF2CCCA72DB079215334A01 /* YIMosaicsVc.xib in Resources */,
-				5BF2CACF0CE6C997B094C61E /* YIDonateVc.xib in Resources */,
-				5BF2C8E925324A29F6D567B7 /* flashlight64@2x.png in Resources */,
-				5BF2C1359D5C1BCD246C72BF /* YIFlashlightVc.xib in Resources */,
-				5BF2C6227CCC2BCC3DD3480E /* YINineGridVc.xib in Resources */,
-				5BF2C018ACF573F628A42F88 /* image_default@2x.jpg in Resources */,
-				5BF2CCDD32EC0762C841AE41 /* YIBlurVc.xib in Resources */,
-				5BF2C1460526F2E7CFDAF6BD /* CodeScan.bundle in Resources */,
-				5BF2C5DB75BC6B5A9BEA5D92 /* ScanResultViewController.xib in Resources */,
+				5BF2C05B7597B6B5B3BA6F74 /* YIIndexVc.xib in Resources */,
+				5BF2C8A6511F137A0BF5C509 /* CheckmarkUnselected@2x.png in Resources */,
+				5BF2CADBCBC0F4B5C3C226FA /* Checkmark@2x.png in Resources */,
+				5BF2C6D3A1E9F6851AC97CB3 /* BKPasscodeView.strings in Resources */,
+				52EC9A541D3B84DE005B8E7E /* 5.pic.jpg in Resources */,
+				5BF2C45053DA34FE09A75BAE /* placeholder_dropbox@2x.png in Resources */,
+				5BF2C834197F560F810E7D11 /* YIPrivatePhotoVc.xib in Resources */,
+				5BF2C56390DA552761E3C4C3 /* YIPrivateSettingVc.xib in Resources */,
+				5BF2C07A8113380CDADC2353 /* YIMosaicsVc.xib in Resources */,
+				5BF2CE2DA133CFD2D2B4D46A /* YIDonateVc.xib in Resources */,
+				5BF2C1AA12FD084956484CD1 /* flashlight64@2x.png in Resources */,
+				5BF2C4DFFB388C51170B8DE6 /* YIFlashlightVc.xib in Resources */,
+				5BF2C8D5EACB187BFAB98A88 /* YINineGridVc.xib in Resources */,
+				5BF2C9981BD0A7C1ACA69B85 /* image_default@2x.jpg in Resources */,
+				5BF2C23E00499F4EB758F631 /* YIBlurVc.xib in Resources */,
+				5BF2C31FF47CB310D9D7D8F7 /* CodeScan.bundle in Resources */,
+				5BF2CD61FF4539421EF218ED /* ScanResultViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1283,10 +1353,12 @@
 				5286213D1C5E0508002A5FEC /* YIConfigUtil+UI.m in Sources */,
 				5286213F1C5E0508002A5FEC /* YIConfigUtil+Cache.m in Sources */,
 				5286217E1C5E06C2002A5FEC /* UIView+Animation.m in Sources */,
+				528A87F91D37D21500CDE3D1 /* YIToolPickerVc.m in Sources */,
 				528621371C5E0508002A5FEC /* NSString+YI.m in Sources */,
 				5286213B1C5E0508002A5FEC /* YIConfigUtil+Business.m in Sources */,
 				528621751C5E06C2002A5FEC /* UIColor+Addition.m in Sources */,
 				5286219B1C5E071A002A5FEC /* YIBaseNavigationController.m in Sources */,
+				52EC9A521D3B7820005B8E7E /* EditImageManager.m in Sources */,
 				528621801C5E06C2002A5FEC /* UIView+Layer.m in Sources */,
 				52854B9C1C61F56D00AC8761 /* UIImage+PECrop.m in Sources */,
 				528621981C5E071A002A5FEC /* YIBaseCollectionViewCell.m in Sources */,
@@ -1306,47 +1378,51 @@
 				528621991C5E071A002A5FEC /* YIBaseCollectionViewController.m in Sources */,
 				5286216F1C5E06C2002A5FEC /* NSArray+Addition.m in Sources */,
 				5286219A1C5E071A002A5FEC /* YIBaseDataSource.m in Sources */,
-				5BF2C7D051317E41E6864AB6 /* YIIndexVc.m in Sources */,
-				5BF2CBD2F469A3B5C827E31D /* AFViewShaker.m in Sources */,
-				5BF2C781D5D20DB9378B19A4 /* BKPasscodeDummyViewController.m in Sources */,
-				5BF2CF597D271CECA1AFB7ED /* BKPasscodeField.m in Sources */,
-				524F59C11C95B84C00CF7421 /* YICalculatorVc.m in Sources */,
-				5BF2C9094B42E1A5CF93408D /* BKPasscodeInputView.m in Sources */,
-				5BF2CED2D90C5A2CDD8774D5 /* BKPasscodeLockScreenManager.m in Sources */,
-				5BF2C7A49751BB98A05B9C19 /* BKPasscodeViewController.m in Sources */,
-				5BF2C6387FCB1426EEEC9963 /* BKShiftingView.m in Sources */,
-				5BF2CCCA8FD89873A3889C8E /* BKTouchIDManager.m in Sources */,
-				5BF2CA5C8474F461C440068F /* BKTouchIDSwitchView.m in Sources */,
-				5BF2CDE198B0F03E2E91FB35 /* YIPhotoListCell.m in Sources */,
-				5BF2C5084BB2CE95A1A476F9 /* YIPrivatePhotoVc.m in Sources */,
-				5BF2CD69A2BF8682167DD3D2 /* YIPrivateSettingVc.m in Sources */,
-				5BF2C467CEEDE6D086535759 /* YIPrivateSetting.m in Sources */,
-				5BF2C9DFDE13D68B28FC47A5 /* YIPhotoCollectionViewLayout.m in Sources */,
-				5BF2C9839DB8B30484BACCFC /* YIPasswordManager.m in Sources */,
-				524F59C01C95B84C00CF7421 /* YICalculatorManager.m in Sources */,
-				5BF2C8AF8B1C31AC59900499 /* YIPhotoPreviewViewController.m in Sources */,
-				5BF2C9AD5693016D0C09C8E8 /* YIPhotoPreviewCell.m in Sources */,
-				5BF2C907208DDECB4C30D9EC /* YIPreviewLayout.m in Sources */,
-				5BF2CC33313A0BEABCEE15B5 /* YITransitionPhotoListToPreview.m in Sources */,
-				5BF2C21C5A8EBD8F070993A9 /* YITransitionPreviewToPhotoList.m in Sources */,
-				5BF2C29F4EFE65AF4C38BFAF /* YIMosaicsVc.m in Sources */,
-				5BF2CB284521133B085695E4 /* YIDonateVc.m in Sources */,
-				524F59C21C95B84C00CF7421 /* YICalculatorView.m in Sources */,
-				5BF2CD85FBEB54921802ACF2 /* TorchObject.m in Sources */,
-				5BF2C9D5DAF9D0DA2C4CD219 /* YIFlashlightVc.m in Sources */,
-				5BF2CF94DC59D2AB58E550D6 /* YIFlashlight.m in Sources */,
-				5BF2C2FC6ACBA4F71C243CC3 /* YINineGridVc.m in Sources */,
-				5BF2CA873164115027EDAFFC /* YIBlurVc.m in Sources */,
-				5BF2CDD3B55C202D4883EA60 /* NSUserDefaults+DemoSettings.m in Sources */,
-				5BF2CE9BE23548F66CEB489E /* YIMessagesViewController.m in Sources */,
-				5BF2C91298F84A7E171EB01C /* YIMessagesModelData.m in Sources */,
-				5BF2C1B1909482A54057AC6E /* YIScanVc.m in Sources */,
-				5BF2C8AE54D44B05C2127631 /* SubLBXScanViewController.m in Sources */,
-				5BF2C9FA6D678BCBDD56E7CE /* LBXAlertAction.m in Sources */,
-				5BF2C35BC4B6401514A480D3 /* UIActionSheet+LBXAlertAction.m in Sources */,
-				5BF2C2F9D5B2686F1BBEA665 /* UIAlertView+LBXAlertAction.m in Sources */,
-				5BF2CE15B73E7E074DE17101 /* ScanResultViewController.m in Sources */,
-				5BF2C8597CABE212F9900070 /* MyQRViewController.m in Sources */,
+				5BF2C883DBAAEBE00D3A4D65 /* YIIndexVc.m in Sources */,
+				5BF2C89212698AE10711F15B /* AFViewShaker.m in Sources */,
+				5BF2CDEBF7F9F4D43E6D8883 /* BKPasscodeDummyViewController.m in Sources */,
+				5BF2C733C4BCB60F0CF43376 /* BKPasscodeField.m in Sources */,
+				5BF2CB77859DF04EB2CAB0FE /* BKPasscodeInputView.m in Sources */,
+				5BF2CEEE58BD0869E72BAF41 /* BKPasscodeLockScreenManager.m in Sources */,
+				5BF2C215DC8C751D180A316B /* BKPasscodeViewController.m in Sources */,
+				5BF2C6AA0C710A5D52526243 /* BKShiftingView.m in Sources */,
+				5BF2C982CFAD2EFB141CBAA2 /* BKTouchIDManager.m in Sources */,
+				5BF2C4BB81B115459A558B03 /* BKTouchIDSwitchView.m in Sources */,
+				5BF2C46D3071E1862C9FDB5A /* YIPhotoListCell.m in Sources */,
+				5BF2C05556138D4757B02C60 /* YIPrivatePhotoVc.m in Sources */,
+				5BF2C5E7B88EA9FAE23BA848 /* YIPrivateSettingVc.m in Sources */,
+				5BF2C63F8A10428F5FB1F1EF /* YIPrivateSetting.m in Sources */,
+				5BF2C5267DC5910E694020B6 /* YIPhotoCollectionViewLayout.m in Sources */,
+				5BF2CF29037743A5E370986F /* YIPasswordManager.m in Sources */,
+				5BF2CA3562E34F9E63250450 /* YIPhotoPreviewViewController.m in Sources */,
+				5BF2C3FFCC46CEA66B09292D /* YIPhotoPreviewCell.m in Sources */,
+				5BF2C85DBB2B2C4AB3FF4BD6 /* YIPreviewLayout.m in Sources */,
+				5BF2CD728CB563451386FD25 /* YITransitionPhotoListToPreview.m in Sources */,
+				5BF2C7B4EECB4A9F6CA95FE7 /* YITransitionPreviewToPhotoList.m in Sources */,
+				5BF2CFBEB134559ED894D835 /* YIMosaicsVc.m in Sources */,
+				5BF2C525700AB9255DD63796 /* YIDonateVc.m in Sources */,
+				5BF2C6CC12F29B0DA8FD9540 /* TorchObject.m in Sources */,
+				5BF2C8B8A9F823100174B278 /* YIFlashlightVc.m in Sources */,
+				5BF2C80E46DD2FBE7413FB8D /* YIFlashlight.m in Sources */,
+				5BF2C5137A4E35066D20CCA6 /* YINineGridVc.m in Sources */,
+				5BF2C887B8CF3CB6EAB8C9F8 /* YIBlurVc.m in Sources */,
+				5BF2CED932560B2A4FE0BDA8 /* NSUserDefaults+DemoSettings.m in Sources */,
+				5BF2C77A77430C320084DFB5 /* YIMessagesViewController.m in Sources */,
+				5BF2CF3EEB9B61CA29674FEF /* YIMessagesModelData.m in Sources */,
+				5BF2CC8290DC660A87806B86 /* YIScanVc.m in Sources */,
+				5BF2C35F3C8D23E4ED9AC02C /* SubLBXScanViewController.m in Sources */,
+				5BF2C82CA70F58CB54AC67B5 /* LBXAlertAction.m in Sources */,
+				52EC9A511D3B7820005B8E7E /* EditView.m in Sources */,
+				5BF2CBF27DECDB423DD331B7 /* UIActionSheet+LBXAlertAction.m in Sources */,
+				5BF2CCDB654C1492D0CBEDFD /* UIAlertView+LBXAlertAction.m in Sources */,
+				5BF2C21820A03F3F3C93CB15 /* ScanResultViewController.m in Sources */,
+				5BF2C99B46F722514D7592F0 /* MyQRViewController.m in Sources */,
+				5BF2CB018AD561504775584A /* YICalculatorManager.m in Sources */,
+				5BF2C980BF241F0CE06C2B16 /* YICalculatorVc.m in Sources */,
+				5BF2C1DC0F69829A8F35E6C1 /* YICalculatorView.m in Sources */,
+				528A87FC1D37E17800CDE3D1 /* YIBaseToolVc.m in Sources */,
+				5BF2C89926C2045E34004FE4 /* YISettingVc.m in Sources */,
+				5BF2C9C7E4CE20203447B59C /* YIMosaicsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1390,12 +1466,12 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		5BF2C1646CAAE9489CEB1AE5 /* BKPasscodeView.strings */ = {
+		5BF2CE9D4010C9B8C659F5B4 /* BKPasscodeView.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5BF2CE5C9E227BAEA1829CB4 /* en */,
-				5BF2C6ADC3F62C4E7121A5BF /* Base */,
-				5BF2C924674D7F532F10C6FC /* zh-Hans */,
+				5BF2C4EC947085174C006A5F /* en */,
+				5BF2CD57A6FDCDAD286389DF /* Base */,
+				5BF2C22B2522C18B10351928 /* zh-Hans */,
 			);
 			name = BKPasscodeView.strings;
 			sourceTree = "<group>";
@@ -1490,6 +1566,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = YIBox/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1518,6 +1595,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = YIBox/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (

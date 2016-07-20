@@ -24,6 +24,7 @@
 #define kShowFeature            @"show_app_new_featrue"
 #define kSavedVersionCode       @"saved_version_code"
 #define kNotShowSplashScreen	@"not_show_splash_screen"
+#define kHomeVc	@"home_vc"
 
 static NSString *const RELOAD_USER_DATA_NOTIFICATION = @"reload_user_data_notification";
 
@@ -35,7 +36,7 @@ static NSString *const RELOAD_USER_DATA_NOTIFICATION = @"reload_user_data_notifi
 //@property(nonatomic, strong) LCUserEntity *user;
 //@property(nonatomic, strong) LCBabyEntity *curBaby;
 
-
+@property(nonatomic, strong) NSString *homeVc;
 @property(nonatomic, assign) BOOL login;  // 是否已登录
 @property(nonatomic, assign) BOOL isLaunched; // 用在显示欢迎页上
 @property(nonatomic, assign) BOOL isShowFeature; // 用在显示新功能介绍上

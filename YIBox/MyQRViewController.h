@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YIBaseToolVc.h"
 
-@interface MyQRViewController : UIViewController
+@interface MyQRViewController : YIBaseToolVc
 
 @end

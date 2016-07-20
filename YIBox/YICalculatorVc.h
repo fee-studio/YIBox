@@ -3,8 +3,9 @@
 // Copyright (c) 2016 buerguo. All rights reserved.
 //
 
+#import "YIBaseToolVc.h"
 
-@interface YICalculatorVc : YIBaseViewController
+@interface YICalculatorVc : YIBaseToolVc
 
 
 

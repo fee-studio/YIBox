@@ -232,6 +232,8 @@
 	
 }
 
+#pragma mark -
+
 - (void)viewDidDisappear:(BOOL)animated {
 	[super viewDidDisappear:animated];
 //	[self.navigationController.navigationBar lt_reset];

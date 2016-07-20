@@ -7,7 +7,8 @@
 //
 
 #import "YIBaseViewController.h"
+#import "YIBaseToolVc.h"
 
-@interface YINineGridVc : YIBaseViewController
+@interface YINineGridVc : YIBaseToolVc
 
 @end

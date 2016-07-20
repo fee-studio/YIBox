@@ -56,5 +56,6 @@
 #import "YILogUtil.h"
 #import "UIButton+UI.h"
 
+#import <OpenGLES/ES1/gl.h>
 
 #endif

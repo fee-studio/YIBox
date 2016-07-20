@@ -360,3 +360,10 @@ pod 'SevenSwitch', '~> 1.4'
 
 pod 'LBXScan'
 
+##################################################
+
+pod 'GPUImage'
+
+# https://github.com/alskipp/ASValueTrackingSlider
+pod 'ASValueTrackingSlider'
+

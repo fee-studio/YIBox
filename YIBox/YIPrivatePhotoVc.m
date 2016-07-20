@@ -26,6 +26,8 @@ CTAssetsPickerControllerDelegate, YIPhotoPreviewViewControllerDelegate, UINaviga
 	NSString *privatePhotosPathThumbnail;
 	BOOL isEditing;
 	UIView *toolbar;
+	
+	PHAssetCollection *collection;
 }
 
 @property (nonatomic, strong) NSArray *assets;
@@ -448,6 +450,10 @@ CTAssetsPickerControllerDelegate, YIPhotoPreviewViewControllerDelegate, UINaviga
 }
 
 - (void)publicSelectedPhotos:(BOOL)willDelete {
+	
+	collection = [self getCollection];
+	
+	
 	[_onlySelectedAssets enumerateObjectsUsingBlock:^(id  _Nonnull obj, BOOL * _Nonnull stop) {
 		[self saveImage:[privatePhotosPath stringByAppendingPathComponent:obj] completionHandler:^(BOOL success, NSError * _Nullable error) {
 			dispatch_async(dispatch_get_main_queue(), ^{
@@ -475,7 +481,7 @@ CTAssetsPickerControllerDelegate, YIPhotoPreviewViewControllerDelegate, UINaviga
 		assetId = [PHAssetCreationRequest creationRequestForAssetFromImageAtFileURL:url].placeholderForCreatedAsset.localIdentifier;
 	} completionHandler:^(BOOL success, NSError * _Nullable error) {
 		// 2. 获得相册对象
-		PHAssetCollection *collection = [self getCollection];
+//		PHAssetCollection *collection = [self getCollection];
 		// 3. 将“相机胶卷”中的图片添加到新的相册
 		[[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
 			PHAssetCollectionChangeRequest *request = [PHAssetCollectionChangeRequest changeRequestForAssetCollection:collection];

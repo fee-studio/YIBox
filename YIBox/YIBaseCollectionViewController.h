@@ -4,9 +4,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "YIBaseToolVc.h"
 
 
-@interface YIBaseCollectionViewController : YIBaseViewController <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+@interface YIBaseCollectionViewController : YIBaseToolVc <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, strong) UICollectionView *baseCollectionView;
 

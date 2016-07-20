@@ -39,6 +39,7 @@ static YIGlobalData *sharedGlobalData = nil;
 	// 加载用户相关
 	[self loadCurrentUser];
 
+    _homeVc = [mUserDefaults stringForKey:kHomeVc];
     _login = [mUserDefaults boolForKey:kLogin];
     _isLaunched = [mUserDefaults boolForKey:kLaunched];
     _debugOn = [mUserDefaults boolForKey:kDebugOn];
@@ -99,9 +100,16 @@ static YIGlobalData *sharedGlobalData = nil;
 	[mUserDefaults synchronize];
 }
 
-
 - (void)setPrivateSetting:(YIPrivateSetting *)privateSetting {
 	
 }
+
+
+- (void)setHomeVc:(NSString *)homeVc {
+    _homeVc = homeVc;
+    [mUserDefaults setObject:_homeVc forKey:kHomeVc];
+    [mUserDefaults synchronize];
+}
+
 
 @end

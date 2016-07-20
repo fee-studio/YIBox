@@ -1,6 +1,7 @@
 PODS:
   - AMapLocation (1.1.1)
   - AMapSearch (3.2.0)
+  - ASValueTrackingSlider (0.11.2)
   - CSStickyHeaderFlowLayout (0.2.10)
   - CTAssetsPickerController (3.2.4):
     - PureLayout (~> 3.0.0)
@@ -8,6 +9,7 @@ PODS:
   - DZNEmptyDataSet (1.7.3)
   - FLEX (2.2.0)
   - FXBlurView (1.6.4)
+  - GPUImage (0.1.7)
   - HexColors (2.2.1)
   - IDMPhotoBrowser (1.8.1):
     - DACircularProgress
@@ -62,11 +64,13 @@ PODS:
 DEPENDENCIES:
   - AMapLocation
   - AMapSearch
+  - ASValueTrackingSlider
   - CSStickyHeaderFlowLayout
   - CTAssetsPickerController (~> 3.2.0)
   - DZNEmptyDataSet
   - FLEX (~> 2.0)
   - FXBlurView
+  - GPUImage
   - IDMPhotoBrowser
   - iOS-Category
   - JSQMessagesViewController
@@ -106,12 +110,14 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AMapLocation: fc0245146ef90811f9590d428e9035a2a64f4526
   AMapSearch: a885f0702578a441a22cb66fa74f8918c6d19e6f
+  ASValueTrackingSlider: 45c9f78252da60de01d8f2afe869aaf90dd978d9
   CSStickyHeaderFlowLayout: 5366582779d8b7c9ba9b9cc729c218cc23888776
   CTAssetsPickerController: bc7264c9bc40064b7de4a66bf9948c2c5ce3f355
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DZNEmptyDataSet: dd7cca17c1d07dfa78956859b1e70a52505678ef
   FLEX: bc8a4fb887ed5d3cdf7c2f3bd665f7bb1647cc58
   FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   HexColors: abfd172e329dab59888614ccba6f216cec59289d
   IDMPhotoBrowser: 99eccfe6431e182f64e2fe57ac654316fbf81576
   iOS-Category: 295d0eb4cc2b937a0fa47effab4f30c48d121869

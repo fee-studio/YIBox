@@ -18,7 +18,8 @@
 #import "YISplashScreen.h"
 #import "YIInitUtil.h"
 #import "YICalculatorVc.h"
-
+#import "YIMosaicsVc.h"
+#import "YIBlurVc.h"
 
 @interface YIAppDelegate () <CLLocationManagerDelegate, UIViewControllerTransitioningDelegate>
 {
@@ -46,16 +47,16 @@
 
 //    // 初始化网络配置
 //    [self initNetConfig];
-//    
+//
 //    // 初始化图片缓存
 //    [self initImageConfig];
-	
+
 //    // 初始化友盟统计插件
 //    [self initUMeng:launchOptions];
-    
+
 //    // 初始化全局数据
 //    [self initGlobalData];
-        
+
     // 注册错误处理通知
     [self registerErrorHandleNotification];
     
@@ -414,8 +415,9 @@
 }
 
 - (void)loadMainViewController {
+//	YIMosaicsVc *vc = [[YIMosaicsVc alloc] init];
+//	YIBlurVc *vc = [[YIBlurVc alloc] init];
 	YIIndexVc *vc = [[YIIndexVc alloc] init]; // todo ...
-//	YICalculatorVc *vc = [[YICalculatorVc alloc] init];
 	YIBaseNavigationController *mainNc = [[YIBaseNavigationController alloc] initWithRootViewController:vc];
 	self.window = [[UIWindow alloc] initWithFrame:mScreenBounds];
 	[self.window setRootViewController:mainNc];

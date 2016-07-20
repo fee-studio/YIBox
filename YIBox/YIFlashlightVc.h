@@ -7,7 +7,8 @@
 //
 
 #import "YIBaseViewController.h"
+#import "YIBaseToolVc.h"
 
-@interface YIFlashlightVc : YIBaseViewController
+@interface YIFlashlightVc : YIBaseToolVc
 
 @end

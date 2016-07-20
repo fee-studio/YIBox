@@ -9,7 +9,10 @@
 @implementation NSString (YI)
 
 - (BOOL)isOK {
-    if (self && ![[self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] isEqualToString:@""]) {
+    if (self
+		&& ![[self stringByTrimmingCharactersInSet:
+			  [NSCharacterSet whitespaceAndNewlineCharacterSet]]
+			 isEqualToString:@""]) {
         return YES;
     } else {
         return NO;
